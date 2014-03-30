@@ -4,7 +4,7 @@ title: "My First Shellcode"
 date: 2014-03-29 17:11:42 -0500
 comments: true
 categories: [shellcode, assembly, x86_64]
-published: false
+published: true
 ---
 Lately I've been wanting to explore some of what I call the "black magic" of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I'm looking at because I just don't understand it. On Twitter I've been seeing <a href="http://twitter.com/SecurityTube">@SecurityTube</a> advertise their <a href="http://www.pentesteracademy.com/course?id=7">x86_64 Assembly and Shellcoding on Linux</a> video course, so I decided to drop some money and learn what I can from it. I've yet to fully finish it, but more on that later.
 <!--more-->
