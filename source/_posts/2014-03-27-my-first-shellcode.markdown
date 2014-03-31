@@ -17,6 +17,8 @@ For those that are interested in dissecting the following code, it is using the 
 {% gist 9820129 %}
 
 Resources:<br />
+http://www.shell-storm.org/shellcode/files/shellcode-867.php
+
 http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64
 
 http://man7.org/linux/man-pages/man2/open.2.html
