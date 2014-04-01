@@ -9,6 +9,8 @@ categories: thotcon, bsides_chicago
 
 So this past weekend I was in Chicago for <a href="http://twitter.com/thotcon">Thotcon 0×4</a> and <a href="http://twitter.com/bsideschicago">BSides Chicago 2013</a>. Quite fun stuff since I haven’t been to a con since <a href="http://twitter.com/Derbycon">Derbycon</a>. I was really looking forward to catching up with some people, checking out some talks, and participating in the CTF at BSides.
 
+<!-- more-->
+
 Friday rolls around, we head to Thotcon and get all sorts of checked in. Those badges were really flippin’ sweet. Arduinos with a ZigBee interface and a matrix of LED’s to display text and such. I haven’t quite figured out what exactly the badges do, but I guess if the ZigBee interface happens to get close enough to a number of beacons placed around the conference, then you get more LED dots lit up on your badge. The more the merrier. Still need to play around with it some more…
 
 The Thotcon talks were good, but I took particular interest in <a href="http://twitter.com/Ben0xA">@Ben0xA’s</a> “Creating A Powerful User Defense Against Attackers”, <a href="http://twitter.com/claudijd">@claudijd’s</a> “Attacking Cloud Services w/ Source Code”, and Daniel Peck’s “Scripting Android Applications”. I thought they were the most interesting ones presented and ones that I want to continue to take a look into once I have some free time.
