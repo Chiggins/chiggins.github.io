@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Php, | Chiggins Thoughts]]></title>
+  <link href="http://chigstuff.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://chigstuff.com/"/>
+  <updated>2015-04-28T14:09:05-05:00</updated>
+  <id>http://chigstuff.com/</id>
+  <author>
+    <name><![CDATA[Chris Higgins]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Google Cloud Messaging Through PHP]]></title>
+    <link href="http://chigstuff.com/blog/2012/08/21/google-cloud-messaging-through-php/"/>
+    <updated>2012-08-21T16:15:01-05:00</updated>
+    <id>http://chigstuff.com/blog/2012/08/21/google-cloud-messaging-through-php</id>
+    <content type="html"><![CDATA[<p>A few weeks ago I ran into an article on how to use Google Cloud Messaging with the .NET Framework. That got me thinking, and I wanted to give it a shot in PHP, it couldn’t be too bad right? So, here’s just some simple code on crafting the POST request to send to a specified Android device. All you need to do is supply your own various IDs from Google and whatever Android device you want to send to (as long as it’s registered) and you’re all set. Take a look at my code:</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/9923471.js'></script>
+<noscript><pre><code>&lt;?php
+// You put your own App ID and Sender IDs
+define(&quot;GOOGLE_APP_ID&quot;, &quot;AIxxxxxxxxx&quot;);
+define(&quot;SENDER_ID&quot;, &quot;xxxxxxxxxx&quot;);
+
+// Device ID to send the message to
+$deviceId = &quot;insertdeviceidhere&quot;;
+$message = &quot;Message from PHP!&quot;;
+
+// Create the POST request
+$request = &quot;https://android.googleapis.com/gcm/send&quot;;
+$postData = &quot;collapse_key=score_update&amp;time_to_live=108&amp;delay_while_idle=1&amp;data.message={$message}&amp;data.time=&quot; . date(&quot;Y-m-d H:i:s&quot;) . &quot;&amp;registration_id={$deviceId}&quot;;
+echo &quot;Sending request to {$request} with postData {$postData}&quot;;
+$session = curl_init($request);
+
+// Set HTTP headers
+curl_setopt($session, CURLOPT_HTTPHEADER, array(&quot;Authorization: key=&quot; . GOOGLE_APP_ID, &quot;Sender: id=&quot; . SENDER_ID, &quot;Content-Type: application/x-www-form-urlencoded;charset=UTF-8&quot;));
+
+// Make it so it&#39;s a POST request
+curl_setopt($session, CURLOPT_POST, true);
+curl_setopt($session, CURLOPT_POSTFIELDS, $postData);
+
+// Don&#39;t return headers, but get the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+echo &quot;Sending...&quot;;
+$response = curl_exec($session);
+curl_close($session);
+echo &quot;Response: {$response}&quot;;
+?&gt;
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

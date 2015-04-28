@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: .net, | Chiggins Thoughts]]></title>
+  <link href="http://chigstuff.com/blog/categories/dot-net/atom.xml" rel="self"/>
+  <link href="http://chigstuff.com/"/>
+  <updated>2015-04-28T14:09:05-05:00</updated>
+  <id>http://chigstuff.com/</id>
+  <author>
+    <name><![CDATA[Chris Higgins]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BSides Chicago 2013 CTF Challenge #31 Write Up]]></title>
+    <link href="http://chigstuff.com/blog/2013/04/30/bsides-chicago-2013-ctf-challenge-number-31-write-up/"/>
+    <updated>2013-04-30T13:45:44-05:00</updated>
+    <id>http://chigstuff.com/blog/2013/04/30/bsides-chicago-2013-ctf-challenge-number-31-write-up</id>
+    <content type="html"><![CDATA[<p>The BSides Chicago 2013 CTF was a fun one and quite the learning experience, so here’s my first ever write up and it’s going to be on challenge #31, easy reverse engineering on a .NET console application.</p>
+
+<p><img class="center" src="/images/bsides_2013_31/1.jpg"></p>
+
+<!--more-->
+
+
+<p>Here is the challenge description:</p>
+
+<p><blockquote><p>As a new agent, you may have some fears about being treated less than what you are worth. Well don’t you worry your little head one little bit tiger. You’ll be treated with the same level of respect as every other agent here. You are your own person. Ready to take on the challenges here. We consider you one of our top agents!</p></p><p><p>We have recovered an executable from the rogue agent’s computer. Please analyze the file and crack the key. We picked you because you are the brightest and the best, but before you start can you get me some coffee?</p></blockquote></p>
+
+<p>The application seems to be pretty straight forward. Just a simple login form that when properly authenticated, would show the key that you need in order to complete the challenge.</p>
+
+<p><img class="center" src="/images/bsides_2013_31/2.jpg"></p>
+
+<p>Opening the executable in IDA showed a ton of .NET assembly references. Since that was the case, I decided to open the exe up in Reflector instead for better working with .NET. I disassembled the file and began to look at the main() function.</p>
+
+<p><img class="center" src="/images/bsides_2013_31/3.jpg" width="740"></p>
+
+<p>Looking at the code, you can see that you can totally skip past the while loop to bypass authentication. Then at the top you can see where a Base64 encoded string converted into a byte array is supplied. That is referenced after the login code, where it’s SHA1 hash is computed, then turned into a Base16 string with the custom ToBase16 method:</p>
+
+<p><img class="center" src="/images/bsides_2013_31/4.jpg" width="740"></p>
+
+<p>With all of this information, I decided to spin up Visual Studio quick, copy paste over the necessary code that I needed and generate the key myself.</p>
+
+<p><img class="center" src="/images/bsides_2013_31/5.jpg" width="740"></p>
+
+<p><img class="center" src="/images/bsides_2013_31/6.jpg"></p>
+
+<p>Oh hello there key. End up doing some copy/pasta into the CTF framework, submit it, and receive points! I rarely do any reverse engineering, so this was a very cool learning experience for me and I thought that it would be cool to share with others.</p>
+]]></content>
+  </entry>
+  
+</feed>

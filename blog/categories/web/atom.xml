@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web | Chiggins Thoughts]]></title>
+  <link href="http://chigstuff.com/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://chigstuff.com/"/>
+  <updated>2015-04-28T14:09:05-05:00</updated>
+  <id>http://chigstuff.com/</id>
+  <author>
+    <name><![CDATA[Chris Higgins]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BSides Chicago 2014 CTF -- Cleaning Product Request]]></title>
+    <link href="http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf-cleaning-product-request/"/>
+    <updated>2014-04-28T18:56:31-05:00</updated>
+    <id>http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf-cleaning-product-request</id>
+    <content type="html"><![CDATA[<p>At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &ldquo;Cleaning Product Request&rdquo; <em>easy</em> web challenge. Yes, I know, it was an &ldquo;easy&rdquo; challenge. I was just over thinking it and kept beating my head against the wall.</p>
+
+<!--more-->
+
+
+<p><blockquote><p>BEGIN TRANSMISSION</p></p><p><p>TARGET: BSides Joint Task Force<br/>LOCATION: TOP SECRET ()</p></p><p><p>DETAILS:</p></p><p><p>During our analysis of local agents systems we found a rogue file on our systems. We are not sure what it does but we are sure an agent has something to do with it. We tried to refer this to to our guys down in the lab but they said it should have been referred to someone else. That&rsquo;s why we are getting<br/>you involved.</p></p><p><p><a href="https://bsjtf.com/f291lsf.php?flag=gimmie"><a href="https://bsjtf.com/f291lsf.php?flag=gimmie">https://bsjtf.com/f291lsf.php?flag=gimmie</a></a></p></p><p><p>Hint: AJAX</p></p><p><p>Good luck agent!</p></p><p><p>END TRANSMISSION</p></blockquote></p>
+
+<p>So when you first visit the website the website, all you get is a message saying &ldquo;Access Denied.&rdquo; I started up Burp and captured the request to see if anything interesting stuck out, but no luck. I also tried to mess around with the referer header since that was the key to a challenge at last years CTF, but again no luck. The @bsjtf was tweeting out hints related to this challenge such as &ldquo;What&rsquo;s a utility that is also a cleaning product?&rdquo;, &ldquo;There are all sorts of things that can be "spoofed&rdquo;. Especially when looking for &ldquo;cleaning product&rdquo; requests. #tricityctf", and what finally gave me the final push, &ldquo;How do you check to see if an request was sent via AJAX?&rdquo;.</p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/1.png" width="750"></p>
+
+<p>If you look up how AJAX requests work, you&rsquo;ll see that the X_REQUESTED_WITH header is set to XMLHTTPRequest. In Burp I send the request to repeater, added in the X_REQUESTED_WITH header, set it to XMLHTTPRequest, sent out the request, and boom, flag acquired. Ben0xA, you&rsquo;re going to give me gray hair with simple silly challenges like this!</p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/2.png" width="750"></p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/3.png" width="750"></p>
+]]></content>
+  </entry>
+  
+</feed>

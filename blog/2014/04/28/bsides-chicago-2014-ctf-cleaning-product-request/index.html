@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>BSides Chicago 2014 CTF -- Cleaning Product Request - Chiggins Thoughts</title>
+  <meta name="author" content="Chris Higgins">
+
+  
+  <meta name="description" content="BSides Chicago 2014 CTF -- Cleaning Product Request written April 28, 2014 in bsides-chicago, ctf, tricity-ctf, web At BSides Chicago 2014 this &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf-cleaning-product-request">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Chiggins Thoughts" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20956062-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+  <body>
+    <a href="/" class="home-icon">
+      <img src="/images/home.png"/>
+    </a>
+
+    <article role="article" class="full-single-article">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>BSides Chicago 2014 CTF -- Cleaning Product Request</h1>
+        <div class="meta">
+          written 
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2014-04-28T18:56:31-05:00" pubdate data-updated="true">April 28, 2014</time> in 
+          
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bsides-chicago/'>bsides-chicago</a>, <a class='category' href='/blog/categories/ctf/'>ctf</a>, <a class='category' href='/blog/categories/tricity-ctf/'>tricity-ctf</a>, <a class='category' href='/blog/categories/web/'>web</a>
+  
+</span>
+
+
+        </div>
+        <p>At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &ldquo;Cleaning Product Request&rdquo; <em>easy</em> web challenge. Yes, I know, it was an &ldquo;easy&rdquo; challenge. I was just over thinking it and kept beating my head against the wall.</p>
+
+<!--more-->
+
+
+<blockquote><p>BEGIN TRANSMISSION</p><p>TARGET: BSides Joint Task Force<br/>LOCATION: TOP SECRET ()</p><p>DETAILS:</p><p>During our analysis of local agents systems we found a rogue file on our systems. We are not sure what it does but we are sure an agent has something to do with it. We tried to refer this to to our guys down in the lab but they said it should have been referred to someone else. That&#8217;s why we are getting <br/>you involved.</p><p><a href="https://bsjtf.com/f291lsf.php?flag=gimmie">https://bsjtf.com/f291lsf.php?flag=gimmie</a></p><p>Hint: AJAX</p><p>Good luck agent!</p><p>END TRANSMISSION</p></blockquote>
+
+
+<p>So when you first visit the website the website, all you get is a message saying &ldquo;Access Denied.&rdquo; I started up Burp and captured the request to see if anything interesting stuck out, but no luck. I also tried to mess around with the referer header since that was the key to a challenge at last years CTF, but again no luck. The @bsjtf was tweeting out hints related to this challenge such as &ldquo;What&rsquo;s a utility that is also a cleaning product?&rdquo;, &ldquo;There are all sorts of things that can be &#8220;spoofed&rdquo;. Especially when looking for &ldquo;cleaning product&rdquo; requests. #tricityctf&#8221;, and what finally gave me the final push, &ldquo;How do you check to see if an request was sent via AJAX?&rdquo;.</p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/1.png" width="750"></p>
+
+<p>If you look up how AJAX requests work, you&rsquo;ll see that the X_REQUESTED_WITH header is set to XMLHTTPRequest. In Burp I send the request to repeater, added in the X_REQUESTED_WITH header, set it to XMLHTTPRequest, sent out the request, and boom, flag acquired. Ben0xA, you&rsquo;re going to give me gray hair with simple silly challenges like this!</p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/2.png" width="750"></p>
+
+<p><img class="center" src="/images/bsides_2014_cleaning/3.png" width="750"></p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
+<hr class="divider-short"/>
+
+<div class="archive-link">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        
+          <a class="pull-left" href="/blog/2014/03/29/my-first-shellcode/" title="Previous Post: My First Shellcode">&laquo; Previous: My First Shellcode</a>
+        
+
+        
+          <a class="pull-right" href="/blog/2014/09/30/derbycon-4-dot-0-ctf-trndocs-elf-binary-reverse-engineering-and-debugging/" title="Next Post: DerbyCon 4.0 CTF - TRNDOCS ELF Binary Reverse Engineering and Debugging">Next: DerbyCon 4.0 CTF - TRNDOCS ELF Binary Reverse Engineering and Debugging &raquo;</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="her-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+  <a href="/"><h4>Home</h4></a>
+</div>
+
+<div class="col-md-2">
+  <div class="social-icon-list">
+    <a href="https://twitter.com/ch1gg1ns"><img src="/images/glyphicons_social_31_twitter.png"/></a>
+    <a href="https://github.com/chiggins"><img src="/images/glyphicons_social_21_github.png"/></a>
+    <a href="mailto:chris@chigs.me"><img src="/images/glyphicons_social_39_e-mail.png"/></a>
+  </div>
+</div>
+
+<div class="pull-right">
+  <h4>Powered by <a href="http://octopress.org/">Octopress</a>. Designed by <a href="http://AdrianArtiles.com">Adrian Artiles</a>.</h4>
+</div>
+
+
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

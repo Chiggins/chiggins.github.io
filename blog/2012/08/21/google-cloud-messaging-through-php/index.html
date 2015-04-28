@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Google Cloud Messaging Through PHP - Chiggins Thoughts</title>
+  <meta name="author" content="Chris Higgins">
+
+  
+  <meta name="description" content="Google Cloud Messaging Through PHP written August 21, 2012 in android, gcm,, php, A few weeks ago I ran into an article on how to use Google Cloud &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chigstuff.com/blog/2012/08/21/google-cloud-messaging-through-php">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Chiggins Thoughts" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20956062-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+  <body>
+    <a href="/" class="home-icon">
+      <img src="/images/home.png"/>
+    </a>
+
+    <article role="article" class="full-single-article">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Google Cloud Messaging Through PHP</h1>
+        <div class="meta">
+          written 
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2012-08-21T16:15:01-05:00" pubdate data-updated="true">August 21, 2012</time> in 
+          
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>android</a>, <a class='category' href='/blog/categories/gcm/'>gcm,</a>, <a class='category' href='/blog/categories/php/'>php,</a>
+  
+</span>
+
+
+        </div>
+        <p>A few weeks ago I ran into an article on how to use Google Cloud Messaging with the .NET Framework. That got me thinking, and I wanted to give it a shot in PHP, it couldn’t be too bad right? So, here’s just some simple code on crafting the POST request to send to a specified Android device. All you need to do is supply your own various IDs from Google and whatever Android device you want to send to (as long as it’s registered) and you’re all set. Take a look at my code:</p>
+
+<!--more-->
+
+
+<div><script src='https://gist.github.com/9923471.js'></script>
+<noscript><pre><code>&lt;?php
+// You put your own App ID and Sender IDs
+define(&quot;GOOGLE_APP_ID&quot;, &quot;AIxxxxxxxxx&quot;);
+define(&quot;SENDER_ID&quot;, &quot;xxxxxxxxxx&quot;);
+
+// Device ID to send the message to
+$deviceId = &quot;insertdeviceidhere&quot;;
+$message = &quot;Message from PHP!&quot;;
+
+// Create the POST request
+$request = &quot;https://android.googleapis.com/gcm/send&quot;;
+$postData = &quot;collapse_key=score_update&amp;time_to_live=108&amp;delay_while_idle=1&amp;data.message={$message}&amp;data.time=&quot; . date(&quot;Y-m-d H:i:s&quot;) . &quot;&amp;registration_id={$deviceId}&quot;;
+echo &quot;Sending request to {$request} with postData {$postData}&quot;;
+$session = curl_init($request);
+
+// Set HTTP headers
+curl_setopt($session, CURLOPT_HTTPHEADER, array(&quot;Authorization: key=&quot; . GOOGLE_APP_ID, &quot;Sender: id=&quot; . SENDER_ID, &quot;Content-Type: application/x-www-form-urlencoded;charset=UTF-8&quot;));
+
+// Make it so it&#39;s a POST request
+curl_setopt($session, CURLOPT_POST, true);
+curl_setopt($session, CURLOPT_POSTFIELDS, $postData);
+
+// Don&#39;t return headers, but get the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+echo &quot;Sending...&quot;;
+$response = curl_exec($session);
+curl_close($session);
+echo &quot;Response: {$response}&quot;;
+?&gt;
+</code></pre></noscript></div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</article>
+
+<hr class="divider-short"/>
+
+<div class="archive-link">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        
+
+        
+          <a class="pull-right" href="/blog/2013/04/29/thotcon-0x4-and-bsides-chicago-2013/" title="Next Post: Thotcon 0x4 and BSides Chicago 2013">Next: Thotcon 0x4 and BSides Chicago 2013 &raquo;</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="her-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+  <a href="/"><h4>Home</h4></a>
+</div>
+
+<div class="col-md-2">
+  <div class="social-icon-list">
+    <a href="https://twitter.com/ch1gg1ns"><img src="/images/glyphicons_social_31_twitter.png"/></a>
+    <a href="https://github.com/chiggins"><img src="/images/glyphicons_social_21_github.png"/></a>
+    <a href="mailto:chris@chigs.me"><img src="/images/glyphicons_social_39_e-mail.png"/></a>
+  </div>
+</div>
+
+<div class="pull-right">
+  <h4>Powered by <a href="http://octopress.org/">Octopress</a>. Designed by <a href="http://AdrianArtiles.com">Adrian Artiles</a>.</h4>
+</div>
+
+
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
