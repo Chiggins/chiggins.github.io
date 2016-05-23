@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bsides Chicago on Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/bsides-chicago/</link>
+    <description>Recent content in Bsides Chicago on Chiggins&#39; Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Apr 2014 18:56:31 -0500</lastBuildDate>
+    <atom:link href="http://chigstuff.com/categories/bsides-chicago/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BSides Chicago 2014 CTF -- Cleaning Product Request</title>
+      <link>http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf----cleaning-product-request/</link>
+      <pubDate>Mon, 28 Apr 2014 18:56:31 -0500</pubDate>
+      
+      <guid>http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf----cleaning-product-request/</guid>
+      <description>&lt;p&gt;At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &amp;ldquo;Cleaning Product Request&amp;rdquo; &lt;em&gt;easy&lt;/em&gt; web challenge. Yes, I know, it was an &amp;ldquo;easy&amp;rdquo; challenge. I was just over thinking it and kept beating my head against the wall.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;BEGIN TRANSMISSION&lt;/p&gt;
+
+&lt;p&gt;TARGET: BSides Joint Task Force
+LOCATION: TOP SECRET ()&lt;/p&gt;
+
+&lt;p&gt;DETAILS:&lt;/p&gt;
+
+&lt;p&gt;During our analysis of local agents systems we found a rogue file on our systems. We are not sure what it does but we are sure an agent has something to do with it. We tried to refer this to to our guys down in the lab but they said it should have been referred to someone else. That&amp;rsquo;s why we are getting
+you involved.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bsjtf.com/f291lsf.php?flag=gimmie&#34;&gt;https://bsjtf.com/f291lsf.php?flag=gimmie&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hint: AJAX&lt;/p&gt;
+
+&lt;p&gt;Good luck agent!&lt;/p&gt;
+
+&lt;p&gt;END TRANSMISSION&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So when you first visit the website the website, all you get is a message saying &amp;ldquo;Access Denied.&amp;rdquo; I started up Burp and captured the request to see if anything interesting stuck out, but no luck. I also tried to mess around with the referer header since that was the key to a challenge at last years CTF, but again no luck. The @bsjtf was tweeting out hints related to this challenge such as &amp;ldquo;What&amp;rsquo;s a utility that is also a cleaning product?&amp;rdquo;, &amp;ldquo;There are all sorts of things that can be &amp;ldquo;spoofed&amp;rdquo;. Especially when looking for &amp;ldquo;cleaning product&amp;rdquo; requests. #tricityctf&amp;rdquo;, and what finally gave me the final push, &amp;ldquo;How do you check to see if an request was sent via AJAX?&amp;rdquo;.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/1.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;If you look up how AJAX requests work, you&amp;rsquo;ll see that the X_REQUESTED_WITH header is set to XMLHTTPRequest. In Burp I send the request to repeater, added in the X_REQUESTED_WITH header, set it to XMLHTTPRequest, sent out the request, and boom, flag acquired. Ben0xA, you&amp;rsquo;re going to give me gray hair with simple silly challenges like this!&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/2.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/3.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

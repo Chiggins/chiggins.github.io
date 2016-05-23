@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thotcon Bsides_chicago on Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/thotcon-bsides_chicago/</link>
+    <description>Recent content in Thotcon Bsides_chicago on Chiggins&#39; Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2013 14:20:34 -0500</lastBuildDate>
+    <atom:link href="http://chigstuff.com/categories/thotcon-bsides_chicago/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Thotcon 0x4 and BSides Chicago 2013</title>
+      <link>http://chigstuff.com/blog/2013/04/29/thotcon-0x4-and-bsides-chicago-2013/</link>
+      <pubDate>Mon, 29 Apr 2013 14:20:34 -0500</pubDate>
+      
+      <guid>http://chigstuff.com/blog/2013/04/29/thotcon-0x4-and-bsides-chicago-2013/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://chigstuff.com/images/thotcon_bsides_2013_writeup/bsides-badge.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;So this past weekend I was in Chicago for &lt;a href=&#34;http://twitter.com/thotcon&#34;&gt;Thotcon 0×4&lt;/a&gt; and &lt;a href=&#34;http://twitter.com/bsideschicago&#34;&gt;BSides Chicago 2013&lt;/a&gt;. Quite fun stuff since I haven’t been to a con since &lt;a href=&#34;http://twitter.com/Derbycon&#34;&gt;Derbycon&lt;/a&gt;. I was really looking forward to catching up with some people, checking out some talks, and participating in the CTF at BSides.&lt;/p&gt;
+
+&lt;!-- more--&gt;
+
+&lt;p&gt;Friday rolls around, we head to Thotcon and get all sorts of checked in. Those badges were really flippin’ sweet. Arduinos with a ZigBee interface and a matrix of LED’s to display text and such. I haven’t quite figured out what exactly the badges do, but I guess if the ZigBee interface happens to get close enough to a number of beacons placed around the conference, then you get more LED dots lit up on your badge. The more the merrier. Still need to play around with it some more…&lt;/p&gt;
+
+&lt;p&gt;The Thotcon talks were good, but I took particular interest in &lt;a href=&#34;http://twitter.com/Ben0xA&#34;&gt;@Ben0xA’s&lt;/a&gt; “Creating A Powerful User Defense Against Attackers”, &lt;a href=&#34;http://twitter.com/claudijd&#34;&gt;@claudijd’s&lt;/a&gt; “Attacking Cloud Services w/ Source Code”, and Daniel Peck’s “Scripting Android Applications”. I thought they were the most interesting ones presented and ones that I want to continue to take a look into once I have some free time.&lt;/p&gt;
+
+&lt;p&gt;Next day ended up waking up a little late but went over to BSides Chicago. The Abbey Pub was a really cool place, I highly enjoyed the venue. We didn’t really pay attention to the talks, but &lt;a href=&#34;http://twitter.com/_Lopi_&#34;&gt;@&lt;em&gt;Lopi&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/AvidHacker&#34;&gt;@AvidHacker&lt;/a&gt; and I went straight to the CTF. There were a number of gotcha’s and face-palm moments while going through it. Might end up seeing some write up’s on some of the challenges on here, depending on how motivated I am. I had to leave an hour early before the CTF ended so I could catch my train home, but our team ended up scoring 205 points, second place following at 110. Needless to say, we owned at it. Second half of the CTF is going to be at BSides Detroit, I believe we plan on doing that remotely.&lt;/p&gt;
+
+&lt;p&gt;All in all, it was a good weekend for infosec in my book. I really need to start going to con’s some more, so start donating to my “Get Chris Higgins to Go to More Con’s” fund.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
