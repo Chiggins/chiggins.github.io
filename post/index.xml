@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Chiggins&#39; Thoughts</title>
-    <link>http://chigstuff.com/post/</link>
-    <description>Recent content in Posts on Chiggins&#39; Thoughts</description>
+    <title>Post-rsses on Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/post/index.xml</link>
+    <description>Recent content in Post-rsses on Chiggins&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 May 2016 10:55:57 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 23 Nov 2016 16:06:12 -0600</lastBuildDate>
     <atom:link href="http://chigstuff.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Two New Metasploit Modules</title>
+      <link>http://chigstuff.com/blog/2016/11/23/two-new-metasploit-modules/</link>
+      <pubDate>Wed, 23 Nov 2016 16:06:12 -0600</pubDate>
+      
+      <guid>http://chigstuff.com/blog/2016/11/23/two-new-metasploit-modules/</guid>
+      <description>&lt;p&gt;This isn&amp;rsquo;t really anything super big but still something I&amp;rsquo;m proud of. I&amp;rsquo;ve recently gotten two Metasploit exploit modules merged into master, which is pretty cool! You can see what I&amp;rsquo;ve contributed to Metasploit so far on my &lt;a href=&#34;http://chigstuff.com/contributions/&#34;&gt;contributions&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;Even though what I&amp;rsquo;ve really been doing is just porting PoC exploits from &lt;a href=&#34;https://www.exploit-db.com/&#34;&gt;Exploit-DB&lt;/a&gt;, it&amp;rsquo;s provided a great learning experience with how the Metasploit Framework actually works. For one of the modules I had to dive deep into the frameworks core and try to figure out how SEH and it&amp;rsquo;s egghunter work, which was huge to me as I really had just learned how egghunting really worked.&lt;/p&gt;
+
+&lt;p&gt;Big thanks to the #metasploit IRC community on freenode, they were a huge help. Looking forward to adding new modules when the time comes!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2016 Update</title>
@@ -21,17 +37,17 @@
 
 &lt;!-- more --&gt;
 
-&lt;h1 id=&#34;master-of-science:e9618d504f2d83a273a2c8b6d9ef9fb3&#34;&gt;Master of Science&lt;/h1&gt;
+&lt;h1 id=&#34;master-of-science&#34;&gt;Master of Science&lt;/h1&gt;
 
 &lt;p&gt;So my biggest and most recent update is that I&amp;rsquo;ve finally acquired my Master of Science degree from Illinois State University with a focus on Network and Security Management. After three years in the making, this is pretty cool and I&amp;rsquo;m glad to be done.&lt;/p&gt;
 
 &lt;p&gt;One of the things I had to do with my master&amp;rsquo;s program was to take my pick at taking two extra classes, writing a thesis, or work on a directed project. I chose the project path because I thought I&amp;rsquo;d get the most out of that as opposed to the thesis or extra classes. My project focused on malware analysis and was under the direction of Dr. Glen Sagers and Dr. Doug Twithcell. Without getting into too much detail, I set up various honeypots such as &lt;a href=&#34;https://github.com/micheloosterhof/cowrie&#34;&gt;Cowrie&lt;/a&gt; to collect malware samples, automatically store them in &lt;a href=&#34;http://viper.li/&#34;&gt;Viper&lt;/a&gt;, and perform static and dynamic analysis using the &lt;a href=&#34;https://www.cuckoosandbox.org/&#34;&gt;Cuckoo Sandbox&lt;/a&gt;. I defended my project after having worked on it for two semesters and it was received very well. I&amp;rsquo;ve made my &lt;a href=&#34;https://docs.google.com/presentation/d/1quMmd8zH7annhsn7jJfXirww0BYLkIUXaE1cD1TROHk/edit?usp=sharing&#34;&gt;presentation slides&lt;/a&gt; available for viewing for those that might be interested. I&amp;rsquo;m also open to answering any questions or having a chat about what I did!&lt;/p&gt;
 
-&lt;h1 id=&#34;move-to-hugo:e9618d504f2d83a273a2c8b6d9ef9fb3&#34;&gt;Move to Hugo&lt;/h1&gt;
+&lt;h1 id=&#34;move-to-hugo&#34;&gt;Move to Hugo&lt;/h1&gt;
 
 &lt;p&gt;A few posts ago I had mentioned how I moved my blog to Octopress, which had served me well for the time I used it. But recently I ran into some issues and lacking features so I went looking for another platform to use. I came across &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; and after a bit of a learning curve I finally have everything transferred over. One of the really nice bits was that Hugo supports markdown posts like Octopress did, so migration was mostly painless. So far so good, I&amp;rsquo;d recommend checking it out if you&amp;rsquo;re looking for another blogging platform.&lt;/p&gt;
 
-&lt;h1 id=&#34;what-next:e9618d504f2d83a273a2c8b6d9ef9fb3&#34;&gt;What next?&lt;/h1&gt;
+&lt;h1 id=&#34;what-next&#34;&gt;What next?&lt;/h1&gt;
 
 &lt;p&gt;Well now that I have a lot more free time on my hands outside of work, I&amp;rsquo;ve got a few things up my sleeves. I&amp;rsquo;m currently working on setting up a malware lab in ESXi which should allow me to perform a bunch of analysis. I&amp;rsquo;ll probably write up a post about that when I&amp;rsquo;m comfortable with where it&amp;rsquo;s at because now it&amp;rsquo;s definitely a work in progress and needs some TLC before I start throwing malware samples in there.&lt;/p&gt;
 
@@ -53,7 +69,7 @@
 
 &lt;!-- more --&gt;
 
-&lt;h2 id=&#34;the-training:ea7ea5bdd4720864502ddb7dea3c961e&#34;&gt;The Training&lt;/h2&gt;
+&lt;h2 id=&#34;the-training&#34;&gt;The Training&lt;/h2&gt;
 
 &lt;p&gt;Towards the end of last summer I was able to start the training course, and had two months of lab time. I really recommend spending the first handful of days to go over the reading and video materials. They will really help you out when you&amp;rsquo;re going through the lab and you&amp;rsquo;ll know where to reference stuff at.&lt;/p&gt;
 
@@ -63,13 +79,13 @@
 
 &lt;p&gt;I was able to get a lot of the exercises and training done in my first two months, but with the combination of work, the training, and more school work than I anticipated, I ran out of time before I finished what I wanted to and felt comfortable with. I ended up taking a bit of time off from the training and cleaned up a lot of my notes so I would be more prepared for my last attempt at the lab. This March I purchased 15 more days which would overlap with my spring break and spent every day working on the labs, attempting to get as many machines as I could. I learned a lot over the training and finally scheduled a time for my exam.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-exam:ea7ea5bdd4720864502ddb7dea3c961e&#34;&gt;The Exam&lt;/h2&gt;
+&lt;h2 id=&#34;the-exam&#34;&gt;The Exam&lt;/h2&gt;
 
 &lt;p&gt;My exam was scheduled to start at noon on Friday, April 24th. I got everything as prepared as I could, had my training lab report and exercise report all straightened out, and was damn near ready to go. Once I got my exam instructions I was going to town. There were times I knew I was doing well, there were times I was super frustrated, and some times where I needed to take a step back and do something to take my mind off the challenges like make dinner or do some dishes. I ended up getting enough points to pass after about twelve hours into the exam, so I figured that was a good point to get some sleep. I woke up early the next day but didn&amp;rsquo;t score any more points. I spent a few hours putting together my exam report and I was done way earlier than I thought I&amp;rsquo;d be. I submitted all of my documentation and awaited a pass/fail email!&lt;/p&gt;
 
 &lt;p&gt;When I woke up to get ready for work Monday morning, first thing I saw on my phone (minus an annoying alarm clock) was an email from Offensive Security saying that I passed and had obtained my OSCP! I was beyond ecstatic to say the least!&lt;/p&gt;
 
-&lt;h2 id=&#34;the-conclusion:ea7ea5bdd4720864502ddb7dea3c961e&#34;&gt;The Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;the-conclusion&#34;&gt;The Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Even though I took longer than I would&amp;rsquo;ve liked on the training and lab environment, I felt like it was well worth it. I learned a whole lot, and one of my favorite things about the lab environment is how much it felt like a real corporation. I honestly feel like I became one with the &lt;strong&gt;THINC.local&lt;/strong&gt; domain and learned a bunch from it.&lt;/p&gt;
 
@@ -85,10 +101,12 @@
       <guid>http://chigstuff.com/blog/2014/09/30/derbycon-4.0-ctf---trndocs-elf-binary-reverse-engineering-and-debugging/</guid>
       <description>&lt;p&gt;So this past weekend I attended DerbyCon 4.0 in Louisville, Kentucky, and was lucky enough to play the CTF along side the &lt;a href=&#34;https://twitter.com/bsjtf&#34;&gt;@bsjtf&lt;/a&gt; team. We were able to place 16th out of the 77 point scoring teams/individuals, which is pretty damn good I&amp;rsquo;d say. This write-up will be for a reversing challenge I solved, adding 450 points to the teams total.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;One of the first things done was a scan for various services on the network. Since FTP is a common place for CTF flags to hide, went searching for any FTP servers in the environment.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;nmap 10.10.146.1/24 -p &lt;span style=&#34;color: #ae81ff&#34;&gt;21&lt;/span&gt; --open -sV
-&lt;/pre&gt;&lt;/div&gt;
+
+nmap 10.10.146.1/24 -p 21 --open -sV
 
 
 &lt;p&gt;One of the FTP servers that stood out was 10.10.146.74 which has anonymous read access and quite an interesting MOTD when logging in.&lt;/p&gt;
@@ -125,12 +143,13 @@
 
 &lt;p&gt;Interesting, /DRIVE_C/TRNDOCS/ seems to have a lot of interesting information in it. So I pull everything down and start analyzing the file in there.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ ls
+
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ ls
 ATL  CLE  HBG  PGET_A.OUT  RIC
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ file PGET_A.OUT 
-PGET_A.OUT: ELF 32-bit LSB executable, Intel 80386, version &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;SYSV&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;, statically linked, &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt; GNU/Linux 3.2.29, not stripped
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ &lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; ATL
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ file *
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ file PGET_A.OUT 
+PGET_A.OUT: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, for GNU/Linux 3.2.29, not stripped
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ cd ATL
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL]$ file *
 10.TRN: data
 11.TRN: data
 12.TRN: data
@@ -146,9 +165,9 @@ PGET_A.OUT: ELF 32-bit LSB executable, Intel 80386, version &lt;span style=&#34;
 7.TRN:  data
 8.TRN:  data
 9.TRN:  data
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ &lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; ..
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ &lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; CLE
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/CLE&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ file *
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL]$ cd ..
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ cd CLE
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/CLE]$ file *
 10.TRN: ASCII text
 11.TRN: ASCII text
 12.TRN: ASCII text
@@ -164,254 +183,253 @@ PGET_A.OUT: ELF 32-bit LSB executable, Intel 80386, version &lt;span style=&#34;
 7.TRN:  ASCII text
 8.TRN:  ASCII text
 9.TRN:  ASCII text
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/CLE&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ cat 1.TRN
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/CLE]$ cat 1.TRN
 invoice: 21815
 order: 8925
 customer: 30871
 scrip: Percocet
 days: 14
 addr1: James Monroe
-addr2: &lt;span style=&#34;color: #ae81ff&#34;&gt;6596&lt;/span&gt; Euclid
-addr3&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; Zanesville PA 22112
-&lt;/pre&gt;&lt;/div&gt;
+addr2: 6596 Euclid
+addr3; Zanesville PA 22112
 
 
 &lt;p&gt;So it looks like we have a combination of plaintext data, encrypted data, and an ELF binary, which is very interesting. Running strings on the binary doesn&amp;rsquo;t show anything of super interest. Lets just run it and see what happens.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ ./PGET_A.OUT 
-Must &lt;span style=&#34;color: #f8f8f2&#34;&gt;set&lt;/span&gt; options -s &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;server&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; -p &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;password&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; and -u &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;username&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;.
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ ./PGET_A.OUT -s 127.0.0.1 -p password -u user&lt;span style=&#34;color: #e6db74&#34;&gt;`&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ ./PGET_A.OUT 
+Must set options -s (server) -p (password) and -u (username).
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ ./PGET_A.OUT -s 127.0.0.1 -p password -u user`
 
 
 &lt;p&gt;The program accepts a server (which I assume it wants to talk to), and a username and password to validate against. Running it with my localhost set as the server just lets it hang, so I&amp;rsquo;m assuming a socket is being created somewhere. Using strace we&amp;rsquo;ll be able to see more about this.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ strace ./PGET_A.OUT -s 127.0.0.1 -p password -u user 
-execve&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./PGET_A.OUT&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./PGET_A.OUT&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-s&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-p&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;password&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-u&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;user&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;, &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;/* &lt;span style=&#34;color: #ae81ff&#34;&gt;44&lt;/span&gt; vars */&lt;span style=&#34;color: #f92672&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt; Process &lt;span style=&#34;color: #f8f8f2&#34;&gt;PID&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;10312&lt;/span&gt; runs in &lt;span style=&#34;color: #ae81ff&#34;&gt;32&lt;/span&gt; bit mode. &lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-uname&lt;span style=&#34;color: #f92672&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sys&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Linux&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #f8f8f2&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;vader&amp;quot;&lt;/span&gt;, ...&lt;span style=&#34;color: #f92672&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                                  &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9f55000
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x9f55d40&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9f55d40
-set_thread_area&lt;span style=&#34;color: #f92672&#34;&gt;({&lt;/span&gt;entry_number:-1, base_addr:0x9f55840, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1&lt;span style=&#34;color: #f92672&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;entry_number:12&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x9f76d40&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9f76d40
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x9f77000&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9f77000
-socket&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;PF_INET, SOCK_DGRAM, IPPROTO_UDP&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 4
-sendto&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;4, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;user password&amp;quot;&lt;/span&gt;, 13, 0, &lt;span style=&#34;color: #f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sa_family&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;AF_INET, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_port&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;htons&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;3000&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_addr&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;inet_addr&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;)}&lt;/span&gt;, 16&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 13
-recvfrom&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;4, 
-&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ strace ./PGET_A.OUT -s 127.0.0.1 -p password -u user 
+execve(&#34;./PGET_A.OUT&#34;, [&#34;./PGET_A.OUT&#34;, &#34;-s&#34;, &#34;127.0.0.1&#34;, &#34;-p&#34;, &#34;password&#34;, &#34;-u&#34;, &#34;user&#34;], [/* 44 vars */]) = 0
+[ Process PID=10312 runs in 32 bit mode. ]
+uname({sys=&#34;Linux&#34;, node=&#34;vader&#34;, ...}) = 0
+brk(0)                                  = 0x9f55000
+brk(0x9f55d40)                          = 0x9f55d40
+set_thread_area({entry_number:-1, base_addr:0x9f55840, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0 (entry_number:12)
+brk(0x9f76d40)                          = 0x9f76d40
+brk(0x9f77000)                          = 0x9f77000
+socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP) = 4
+sendto(4, &#34;user password&#34;, 13, 0, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr(&#34;127.0.0.1&#34;)}, 16) = 13
+recvfrom(4, 
+)
 
 
 &lt;p&gt;I was right, a socket is trying to make a connection and read back some data. If you notice in sendto, the socket is trying to send data &amp;ldquo;user password&amp;rdquo; to 127.0.0.1 on port 3000. I figured that this program was meant to talk to a server on the network, but scanning for an open port 3000 turned out no results. Figured to just keep moving on with this binary and see what else it does.&lt;/p&gt;
 
 &lt;p&gt;So I decided to set up a natcat listener on port 3000 and try to receive the data and send data back. One thing that tripped me up with this is that I didn&amp;rsquo;t realize you needed to tell netcat to listen as a UDP port. Before knowing that, whenever I had my netcat listener running on TCP 3000, the program would not connect to it. After finding out how to specify UDP, I was finally able to send data back and forth.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;#### netcat listener ####&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ nc -ulvvp &lt;span style=&#34;color: #ae81ff&#34;&gt;3000&lt;/span&gt; 
-Listening on any address &lt;span style=&#34;color: #ae81ff&#34;&gt;3000&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;hbci&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;
-Received packet from 127.0.0.1:58075 -&amp;gt; 127.0.0.1:3000 &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;local&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;
+
+#### netcat listener ####
+[chiggins@vader ~]$ nc -ulvvp 3000 
+Listening on any address 3000 (hbci)
+Received packet from 127.0.0.1:58075 -&gt; 127.0.0.1:3000 (local)
 user passwordJUNKDATA
 
-&lt;span style=&#34;color: #75715e&#34;&gt;#### program ####&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ ./PGET_A.OUT -s 127.0.0.1 -p password -u user 
+#### program ####
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ ./PGET_A.OUT -s 127.0.0.1 -p password -u user 
 bad username or password
 
-&lt;span style=&#34;color: #75715e&#34;&gt;#### program with strace ####&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ strace ./PGET_A.OUT -s 127.0.0.1 -p password -u user
-execve&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./PGET_A.OUT&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./PGET_A.OUT&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-s&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-p&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;password&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;-u&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;user&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;, &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;/* &lt;span style=&#34;color: #ae81ff&#34;&gt;44&lt;/span&gt; vars */&lt;span style=&#34;color: #f92672&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt; Process &lt;span style=&#34;color: #f8f8f2&#34;&gt;PID&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;10537&lt;/span&gt; runs in &lt;span style=&#34;color: #ae81ff&#34;&gt;32&lt;/span&gt; bit mode. &lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-uname&lt;span style=&#34;color: #f92672&#34;&gt;({&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sys&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Linux&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #f8f8f2&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;vader&amp;quot;&lt;/span&gt;, ...&lt;span style=&#34;color: #f92672&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                                  &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9388000
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x9388d40&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x9388d40
-set_thread_area&lt;span style=&#34;color: #f92672&#34;&gt;({&lt;/span&gt;entry_number:-1, base_addr:0x9388840, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1&lt;span style=&#34;color: #f92672&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;entry_number:12&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x93a9d40&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x93a9d40
-brk&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0x93aa000&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                          &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x93aa000
-socket&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;PF_INET, SOCK_DGRAM, IPPROTO_UDP&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 4
-sendto&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;4, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;user password&amp;quot;&lt;/span&gt;, 13, 0, &lt;span style=&#34;color: #f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sa_family&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;AF_INET, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_port&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;htons&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;3000&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_addr&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;inet_addr&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;)}&lt;/span&gt;, 16&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 13
-recvfrom&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;4, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;JUNKDA&amp;quot;&lt;/span&gt;, 6, 0, &lt;span style=&#34;color: #f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sa_family&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;AF_INET, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_port&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;htons&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;3000&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;, &lt;span style=&#34;color: #f8f8f2&#34;&gt;sin_addr&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;inet_addr&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;)}&lt;/span&gt;, &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;16&lt;span style=&#34;color: #f92672&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 6
-fstat64&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;1, &lt;span style=&#34;color: #f92672&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;st_mode&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;S_IFCHR&lt;span style=&#34;color: #f8f8f2&#34;&gt;|&lt;/span&gt;0620, &lt;span style=&#34;color: #f8f8f2&#34;&gt;st_rdev&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;makedev&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;136, 0&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;, ...&lt;span style=&#34;color: #f92672&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0
-mmap2&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;NULL, 4096, PROT_READ&lt;span style=&#34;color: #f8f8f2&#34;&gt;|&lt;/span&gt;PROT_WRITE, MAP_PRIVATE&lt;span style=&#34;color: #f8f8f2&#34;&gt;|&lt;/span&gt;MAP_ANONYMOUS, -1, 0&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0xfffffffff7722000
-write&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;1, &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;bad username or password\n&amp;quot;&lt;/span&gt;, 25bad username or password
-&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 25
-exit_group&lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;                           &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; ?
-+++ exited with &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; +++
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+#### program with strace ####
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ strace ./PGET_A.OUT -s 127.0.0.1 -p password -u user
+execve(&#34;./PGET_A.OUT&#34;, [&#34;./PGET_A.OUT&#34;, &#34;-s&#34;, &#34;127.0.0.1&#34;, &#34;-p&#34;, &#34;password&#34;, &#34;-u&#34;, &#34;user&#34;], [/* 44 vars */]) = 0
+[ Process PID=10537 runs in 32 bit mode. ]
+uname({sys=&#34;Linux&#34;, node=&#34;vader&#34;, ...}) = 0
+brk(0)                                  = 0x9388000
+brk(0x9388d40)                          = 0x9388d40
+set_thread_area({entry_number:-1, base_addr:0x9388840, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0 (entry_number:12)
+brk(0x93a9d40)                          = 0x93a9d40
+brk(0x93aa000)                          = 0x93aa000
+socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP) = 4
+sendto(4, &#34;user password&#34;, 13, 0, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr(&#34;127.0.0.1&#34;)}, 16) = 13
+recvfrom(4, &#34;JUNKDA&#34;, 6, 0, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr(&#34;127.0.0.1&#34;)}, [16]) = 6
+fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfffffffff7722000
+write(1, &#34;bad username or password\n&#34;, 25bad username or password
+) = 25
+exit_group(0)                           = ?
++++ exited with 0 +++
+
 
 &lt;p&gt;So there&amp;rsquo;s a bit going on here. The netcat listener gets set up to listen on port 3000 with the -u specifing UDP. Then when the program runs, it sends along the specified arguments &amp;ldquo;user password&amp;rdquo;. I send back &amp;ldquo;JUNKDATA&amp;rdquo; and the program fails saying bad username and password. I also included the strace output, and you&amp;rsquo;ll notice that the program only reads 6 bytes, &amp;ldquo;JUNKDA&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;Here is where we start to do some debugging and reversing. I load up the program in gdb, set the required arguments, and take a look at the main method.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ gdb -q ./PGET_A.OUT
+
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS]$ gdb -q ./PGET_A.OUT
 Reading symbols from ./PGET_A.OUT...done.
-gdb&amp;gt;set args -s 127.0.0.1 -u username -p password
-gdb&amp;gt;disassemble main
-Dump of assembler code &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; main:
-   0x08048c85 &amp;lt;+0&amp;gt;:	push   ebp
-   0x08048c86 &amp;lt;+1&amp;gt;:	mov    ebp,esp
-   0x08048c88 &amp;lt;+3&amp;gt;:	push   edi
-   0x08048c89 &amp;lt;+4&amp;gt;:	push   esi
-   0x08048c8a &amp;lt;+5&amp;gt;:	push   ebx
-   0x08048c8b &amp;lt;+6&amp;gt;:	and    esp,0xfffffff0
-   0x08048c8e &amp;lt;+9&amp;gt;:	sub    esp,0x50
-   0x08048c91 &amp;lt;+12&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048c99 &amp;lt;+20&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x48&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048ca1 &amp;lt;+28&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x44&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048ca9 &amp;lt;+36&amp;gt;:	lea    eax,&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x13&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048cad &amp;lt;+40&amp;gt;:	mov    edx,0x80bac20
-   0x08048cb2 &amp;lt;+45&amp;gt;:	mov    ebx,0x25
-   0x08048cb7 &amp;lt;+50&amp;gt;:	mov    ecx,eax
-   0x08048cb9 &amp;lt;+52&amp;gt;:	and    ecx,0x1
-   0x08048cbc &amp;lt;+55&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   ecx,ecx
-   0x08048cbe &amp;lt;+57&amp;gt;:	je     0x8048cc7 &amp;lt;main+66&amp;gt;
-   0x08048cc0 &amp;lt;+59&amp;gt;:	mov    cl,BYTE PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;edx&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048cc2 &amp;lt;+61&amp;gt;:	mov    BYTE PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;eax&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,cl
-   0x08048cc4 &amp;lt;+63&amp;gt;:	inc    eax
-   0x08048cc5 &amp;lt;+64&amp;gt;:	inc    edx
-   0x08048cc6 &amp;lt;+65&amp;gt;:	dec    ebx
-   0x08048cc7 &amp;lt;+66&amp;gt;:	mov    ecx,eax
-   0x08048cc9 &amp;lt;+68&amp;gt;:	and    ecx,0x2
-   0x08048ccc &amp;lt;+71&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   ecx,ecx
-   0x08048cce &amp;lt;+73&amp;gt;:	je     0x8048cdf &amp;lt;main+90&amp;gt;
-   0x08048cd0 &amp;lt;+75&amp;gt;:	mov    cx,WORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;edx&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048cd3 &amp;lt;+78&amp;gt;:	mov    WORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;eax&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,cx
-   0x08048cd6 &amp;lt;+81&amp;gt;:	add    eax,0x2
-   0x08048cd9 &amp;lt;+84&amp;gt;:	add    edx,0x2
-   0x08048cdc &amp;lt;+87&amp;gt;:	sub    ebx,0x2
-   0x08048cdf &amp;lt;+90&amp;gt;:	mov    ecx,ebx
-   0x08048ce1 &amp;lt;+92&amp;gt;:	shr    ecx,0x2
-   0x08048ce4 &amp;lt;+95&amp;gt;:	mov    edi,eax
-   0x08048ce6 &amp;lt;+97&amp;gt;:	mov    esi,edx
-   0x08048ce8 &amp;lt;+99&amp;gt;:	rep movs DWORD PTR es:&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;edi&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,DWORD PTR ds:&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esi&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048cea &amp;lt;+101&amp;gt;:	mov    edx,esi
-   0x08048cec &amp;lt;+103&amp;gt;:	mov    eax,edi
-   0x08048cee &amp;lt;+105&amp;gt;:	mov    ecx,0x0
-   0x08048cf3 &amp;lt;+110&amp;gt;:	mov    esi,ebx
-   0x08048cf5 &amp;lt;+112&amp;gt;:	and    esi,0x2
-   0x08048cf8 &amp;lt;+115&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   esi,esi
-   0x08048cfa &amp;lt;+117&amp;gt;:	je     0x8048d07 &amp;lt;main+130&amp;gt;
-   0x08048cfc &amp;lt;+119&amp;gt;:	mov    si,WORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;edx+ecx*1&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048d00 &amp;lt;+123&amp;gt;:	mov    WORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;eax+ecx*1&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,si
-   0x08048d04 &amp;lt;+127&amp;gt;:	add    ecx,0x2
-   0x08048d07 &amp;lt;+130&amp;gt;:	and    ebx,0x1
-   0x08048d0a &amp;lt;+133&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   ebx,ebx
-   0x08048d0c &amp;lt;+135&amp;gt;:	je     0x8048d14 &amp;lt;main+143&amp;gt;
-   0x08048d0e &amp;lt;+137&amp;gt;:	mov    dl,BYTE PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;edx+ecx*1&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048d11 &amp;lt;+140&amp;gt;:	mov    BYTE PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;eax+ecx*1&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,dl
-   0x08048d14 &amp;lt;+143&amp;gt;:	mov    DWORD PTR ds:0x80e4a18,0x0
-   0x08048d1e &amp;lt;+153&amp;gt;:	jmp    0x8048d75 &amp;lt;main+240&amp;gt;
-   0x08048d20 &amp;lt;+155&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x3c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x75
-   0x08048d25 &amp;lt;+160&amp;gt;:	jne    0x8048d32 &amp;lt;main+173&amp;gt;
-   0x08048d27 &amp;lt;+162&amp;gt;:	mov    eax,ds:0x80e6218
-   0x08048d2c &amp;lt;+167&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d30 &amp;lt;+171&amp;gt;:	jmp    0x8048d75 &amp;lt;main+240&amp;gt;
-   0x08048d32 &amp;lt;+173&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x3c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x70
-   0x08048d37 &amp;lt;+178&amp;gt;:	jne    0x8048d44 &amp;lt;main+191&amp;gt;
-   0x08048d39 &amp;lt;+180&amp;gt;:	mov    eax,ds:0x80e6218
-   0x08048d3e &amp;lt;+185&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x48&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d42 &amp;lt;+189&amp;gt;:	jmp    0x8048d75 &amp;lt;main+240&amp;gt;
-   0x08048d44 &amp;lt;+191&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x3c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x73
-   0x08048d49 &amp;lt;+196&amp;gt;:	jne    0x8048d56 &amp;lt;main+209&amp;gt;
-   0x08048d4b &amp;lt;+198&amp;gt;:	mov    eax,ds:0x80e6218
-   0x08048d50 &amp;lt;+203&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x44&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d54 &amp;lt;+207&amp;gt;:	jmp    0x8048d75 &amp;lt;main+240&amp;gt;
-   0x08048d56 &amp;lt;+209&amp;gt;:	mov    edx,DWORD PTR ds:0x80e4a14
-   0x08048d5c &amp;lt;+215&amp;gt;:	mov    eax,ds:0x80e453c
-   0x08048d61 &amp;lt;+220&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,edx
-   0x08048d65 &amp;lt;+224&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80bab4e
-   0x08048d6d &amp;lt;+232&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d70 &amp;lt;+235&amp;gt;:	call   0x80498a0 &amp;lt;fprintf&amp;gt;
-   0x08048d75 &amp;lt;+240&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80bab62
-   0x08048d7d &amp;lt;+248&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;ebp+0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048d80 &amp;lt;+251&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d84 &amp;lt;+255&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;ebp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048d87 &amp;lt;+258&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d8a &amp;lt;+261&amp;gt;:	call   0x8055b10 &amp;lt;getopt&amp;gt;
-   0x08048d8f &amp;lt;+266&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x3c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048d93 &amp;lt;+270&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x3c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0xffffffff
-   0x08048d98 &amp;lt;+275&amp;gt;:	jne    0x8048d20 &amp;lt;main+155&amp;gt;
-   0x08048d9a &amp;lt;+277&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048d9f &amp;lt;+282&amp;gt;:	je     0x8048daf &amp;lt;main+298&amp;gt;
-   0x08048da1 &amp;lt;+284&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x48&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048da6 &amp;lt;+289&amp;gt;:	je     0x8048daf &amp;lt;main+298&amp;gt;
-   0x08048da8 &amp;lt;+291&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x44&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048dad &amp;lt;+296&amp;gt;:	jne    0x8048dde &amp;lt;main+345&amp;gt;
-   0x08048daf &amp;lt;+298&amp;gt;:	mov    eax,ds:0x80e453c
-   0x08048db4 &amp;lt;+303&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048db8 &amp;lt;+307&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x3e
-   0x08048dc0 &amp;lt;+315&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x1
-   0x08048dc8 &amp;lt;+323&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80bab6c
-   0x08048dcf &amp;lt;+330&amp;gt;:	call   0x8049900 &amp;lt;fwrite&amp;gt;
-   0x08048dd4 &amp;lt;+335&amp;gt;:	mov    eax,0x1
-   0x08048dd9 &amp;lt;+340&amp;gt;:	jmp    0x8048eed &amp;lt;main+616&amp;gt;
-   0x08048dde &amp;lt;+345&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x11
-   0x08048de6 &amp;lt;+353&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x2
-   0x08048dee &amp;lt;+361&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x2
-   0x08048df5 &amp;lt;+368&amp;gt;:	call   0x8057100 &amp;lt;socket&amp;gt;
-   0x08048dfa &amp;lt;+373&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048dfe &amp;lt;+377&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048e03 &amp;lt;+382&amp;gt;:	jns    0x8048e34 &amp;lt;main+431&amp;gt;
-   0x08048e05 &amp;lt;+384&amp;gt;:	mov    eax,ds:0x80e453c
-   0x08048e0a &amp;lt;+389&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e0e &amp;lt;+393&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x16
-   0x08048e16 &amp;lt;+401&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x1
-   0x08048e1e &amp;lt;+409&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babab
-   0x08048e25 &amp;lt;+416&amp;gt;:	call   0x8049900 &amp;lt;fwrite&amp;gt;
-   0x08048e2a &amp;lt;+421&amp;gt;:	mov    eax,0x1
-   0x08048e2f &amp;lt;+426&amp;gt;:	jmp    0x8048eed &amp;lt;main+616&amp;gt;
-   0x08048e34 &amp;lt;+431&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e38 &amp;lt;+435&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e3c &amp;lt;+439&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x44&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e40 &amp;lt;+443&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e44 &amp;lt;+447&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x48&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e48 &amp;lt;+451&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e4c &amp;lt;+455&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4c&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e50 &amp;lt;+459&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e53 &amp;lt;+462&amp;gt;:	call   0x8048aec &amp;lt;sendAuth&amp;gt;
-   0x08048e58 &amp;lt;+467&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e5a &amp;lt;+469&amp;gt;:	je     0x8048ec3 &amp;lt;main+574&amp;gt;
-   0x08048e5c &amp;lt;+471&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e60 &amp;lt;+475&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e63 &amp;lt;+478&amp;gt;:	call   0x8048bde &amp;lt;recvAuth&amp;gt;
-   0x08048e68 &amp;lt;+483&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e6a &amp;lt;+485&amp;gt;:	je     0x8048eb5 &amp;lt;main+560&amp;gt;
-   0x08048e6c &amp;lt;+487&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babc2
-   0x08048e73 &amp;lt;+494&amp;gt;:	call   0x8049a50 &amp;lt;puts&amp;gt;
-   0x08048e78 &amp;lt;+499&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048e80 &amp;lt;+507&amp;gt;:	jmp    0x8048ea0 &amp;lt;main+539&amp;gt;
-   0x08048e82 &amp;lt;+509&amp;gt;:	lea    edx,&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x13&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e86 &amp;lt;+513&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e8a &amp;lt;+517&amp;gt;:	add    eax,edx
-   0x08048e8c &amp;lt;+519&amp;gt;:	mov    al,BYTE PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;eax&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e8e &amp;lt;+521&amp;gt;:	xor    eax,0x17
-   0x08048e91 &amp;lt;+524&amp;gt;:	movsx  eax,al
-   0x08048e94 &amp;lt;+527&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e97 &amp;lt;+530&amp;gt;:	call   0x8049c80 &amp;lt;putchar&amp;gt;
-   0x08048e9c &amp;lt;+535&amp;gt;:	inc    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048ea0 &amp;lt;+539&amp;gt;:	cmp    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x24
-   0x08048ea5 &amp;lt;+544&amp;gt;:	jle    0x8048e82 &amp;lt;main+509&amp;gt;
-   0x08048ea7 &amp;lt;+546&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0xa
-   0x08048eae &amp;lt;+553&amp;gt;:	call   0x8049c80 &amp;lt;putchar&amp;gt;
-   0x08048eb3 &amp;lt;+558&amp;gt;:	jmp    0x8048ee8 &amp;lt;main+611&amp;gt;
-   0x08048eb5 &amp;lt;+560&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babca
-   0x08048ebc &amp;lt;+567&amp;gt;:	call   0x8049a50 &amp;lt;puts&amp;gt;
-   0x08048ec1 &amp;lt;+572&amp;gt;:	jmp    0x8048ee8 &amp;lt;main+611&amp;gt;
-   0x08048ec3 &amp;lt;+574&amp;gt;:	mov    eax,ds:0x80e453c
-   0x08048ec8 &amp;lt;+579&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048ecc &amp;lt;+583&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x8&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x1e
-   0x08048ed4 &amp;lt;+591&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x4&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x1
-   0x08048edc &amp;lt;+599&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babe4
-   0x08048ee3 &amp;lt;+606&amp;gt;:	call   0x8049900 &amp;lt;fwrite&amp;gt;
-   0x08048ee8 &amp;lt;+611&amp;gt;:	mov    eax,0x0
-   0x08048eed &amp;lt;+616&amp;gt;:	lea    esp,&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;ebp-0xc&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048ef0 &amp;lt;+619&amp;gt;:	pop    ebx
-   0x08048ef1 &amp;lt;+620&amp;gt;:	pop    esi
-   0x08048ef2 &amp;lt;+621&amp;gt;:	pop    edi
-   0x08048ef3 &amp;lt;+622&amp;gt;:	pop    ebp
-   0x08048ef4 &amp;lt;+623&amp;gt;:	ret    
+gdb&gt;set args -s 127.0.0.1 -u username -p password
+gdb&gt;disassemble main
+Dump of assembler code for function main:
+   0x08048c85 &lt;+0&gt;:	push   ebp
+   0x08048c86 &lt;+1&gt;:	mov    ebp,esp
+   0x08048c88 &lt;+3&gt;:	push   edi
+   0x08048c89 &lt;+4&gt;:	push   esi
+   0x08048c8a &lt;+5&gt;:	push   ebx
+   0x08048c8b &lt;+6&gt;:	and    esp,0xfffffff0
+   0x08048c8e &lt;+9&gt;:	sub    esp,0x50
+   0x08048c91 &lt;+12&gt;:	mov    DWORD PTR [esp+0x4c],0x0
+   0x08048c99 &lt;+20&gt;:	mov    DWORD PTR [esp+0x48],0x0
+   0x08048ca1 &lt;+28&gt;:	mov    DWORD PTR [esp+0x44],0x0
+   0x08048ca9 &lt;+36&gt;:	lea    eax,[esp+0x13]
+   0x08048cad &lt;+40&gt;:	mov    edx,0x80bac20
+   0x08048cb2 &lt;+45&gt;:	mov    ebx,0x25
+   0x08048cb7 &lt;+50&gt;:	mov    ecx,eax
+   0x08048cb9 &lt;+52&gt;:	and    ecx,0x1
+   0x08048cbc &lt;+55&gt;:	test   ecx,ecx
+   0x08048cbe &lt;+57&gt;:	je     0x8048cc7 &lt;main+66&gt;
+   0x08048cc0 &lt;+59&gt;:	mov    cl,BYTE PTR [edx]
+   0x08048cc2 &lt;+61&gt;:	mov    BYTE PTR [eax],cl
+   0x08048cc4 &lt;+63&gt;:	inc    eax
+   0x08048cc5 &lt;+64&gt;:	inc    edx
+   0x08048cc6 &lt;+65&gt;:	dec    ebx
+   0x08048cc7 &lt;+66&gt;:	mov    ecx,eax
+   0x08048cc9 &lt;+68&gt;:	and    ecx,0x2
+   0x08048ccc &lt;+71&gt;:	test   ecx,ecx
+   0x08048cce &lt;+73&gt;:	je     0x8048cdf &lt;main+90&gt;
+   0x08048cd0 &lt;+75&gt;:	mov    cx,WORD PTR [edx]
+   0x08048cd3 &lt;+78&gt;:	mov    WORD PTR [eax],cx
+   0x08048cd6 &lt;+81&gt;:	add    eax,0x2
+   0x08048cd9 &lt;+84&gt;:	add    edx,0x2
+   0x08048cdc &lt;+87&gt;:	sub    ebx,0x2
+   0x08048cdf &lt;+90&gt;:	mov    ecx,ebx
+   0x08048ce1 &lt;+92&gt;:	shr    ecx,0x2
+   0x08048ce4 &lt;+95&gt;:	mov    edi,eax
+   0x08048ce6 &lt;+97&gt;:	mov    esi,edx
+   0x08048ce8 &lt;+99&gt;:	rep movs DWORD PTR es:[edi],DWORD PTR ds:[esi]
+   0x08048cea &lt;+101&gt;:	mov    edx,esi
+   0x08048cec &lt;+103&gt;:	mov    eax,edi
+   0x08048cee &lt;+105&gt;:	mov    ecx,0x0
+   0x08048cf3 &lt;+110&gt;:	mov    esi,ebx
+   0x08048cf5 &lt;+112&gt;:	and    esi,0x2
+   0x08048cf8 &lt;+115&gt;:	test   esi,esi
+   0x08048cfa &lt;+117&gt;:	je     0x8048d07 &lt;main+130&gt;
+   0x08048cfc &lt;+119&gt;:	mov    si,WORD PTR [edx+ecx*1]
+   0x08048d00 &lt;+123&gt;:	mov    WORD PTR [eax+ecx*1],si
+   0x08048d04 &lt;+127&gt;:	add    ecx,0x2
+   0x08048d07 &lt;+130&gt;:	and    ebx,0x1
+   0x08048d0a &lt;+133&gt;:	test   ebx,ebx
+   0x08048d0c &lt;+135&gt;:	je     0x8048d14 &lt;main+143&gt;
+   0x08048d0e &lt;+137&gt;:	mov    dl,BYTE PTR [edx+ecx*1]
+   0x08048d11 &lt;+140&gt;:	mov    BYTE PTR [eax+ecx*1],dl
+   0x08048d14 &lt;+143&gt;:	mov    DWORD PTR ds:0x80e4a18,0x0
+   0x08048d1e &lt;+153&gt;:	jmp    0x8048d75 &lt;main+240&gt;
+   0x08048d20 &lt;+155&gt;:	cmp    DWORD PTR [esp+0x3c],0x75
+   0x08048d25 &lt;+160&gt;:	jne    0x8048d32 &lt;main+173&gt;
+   0x08048d27 &lt;+162&gt;:	mov    eax,ds:0x80e6218
+   0x08048d2c &lt;+167&gt;:	mov    DWORD PTR [esp+0x4c],eax
+   0x08048d30 &lt;+171&gt;:	jmp    0x8048d75 &lt;main+240&gt;
+   0x08048d32 &lt;+173&gt;:	cmp    DWORD PTR [esp+0x3c],0x70
+   0x08048d37 &lt;+178&gt;:	jne    0x8048d44 &lt;main+191&gt;
+   0x08048d39 &lt;+180&gt;:	mov    eax,ds:0x80e6218
+   0x08048d3e &lt;+185&gt;:	mov    DWORD PTR [esp+0x48],eax
+   0x08048d42 &lt;+189&gt;:	jmp    0x8048d75 &lt;main+240&gt;
+   0x08048d44 &lt;+191&gt;:	cmp    DWORD PTR [esp+0x3c],0x73
+   0x08048d49 &lt;+196&gt;:	jne    0x8048d56 &lt;main+209&gt;
+   0x08048d4b &lt;+198&gt;:	mov    eax,ds:0x80e6218
+   0x08048d50 &lt;+203&gt;:	mov    DWORD PTR [esp+0x44],eax
+   0x08048d54 &lt;+207&gt;:	jmp    0x8048d75 &lt;main+240&gt;
+   0x08048d56 &lt;+209&gt;:	mov    edx,DWORD PTR ds:0x80e4a14
+   0x08048d5c &lt;+215&gt;:	mov    eax,ds:0x80e453c
+   0x08048d61 &lt;+220&gt;:	mov    DWORD PTR [esp+0x8],edx
+   0x08048d65 &lt;+224&gt;:	mov    DWORD PTR [esp+0x4],0x80bab4e
+   0x08048d6d &lt;+232&gt;:	mov    DWORD PTR [esp],eax
+   0x08048d70 &lt;+235&gt;:	call   0x80498a0 &lt;fprintf&gt;
+   0x08048d75 &lt;+240&gt;:	mov    DWORD PTR [esp+0x8],0x80bab62
+   0x08048d7d &lt;+248&gt;:	mov    eax,DWORD PTR [ebp+0xc]
+   0x08048d80 &lt;+251&gt;:	mov    DWORD PTR [esp+0x4],eax
+   0x08048d84 &lt;+255&gt;:	mov    eax,DWORD PTR [ebp+0x8]
+   0x08048d87 &lt;+258&gt;:	mov    DWORD PTR [esp],eax
+   0x08048d8a &lt;+261&gt;:	call   0x8055b10 &lt;getopt&gt;
+   0x08048d8f &lt;+266&gt;:	mov    DWORD PTR [esp+0x3c],eax
+   0x08048d93 &lt;+270&gt;:	cmp    DWORD PTR [esp+0x3c],0xffffffff
+   0x08048d98 &lt;+275&gt;:	jne    0x8048d20 &lt;main+155&gt;
+   0x08048d9a &lt;+277&gt;:	cmp    DWORD PTR [esp+0x4c],0x0
+   0x08048d9f &lt;+282&gt;:	je     0x8048daf &lt;main+298&gt;
+   0x08048da1 &lt;+284&gt;:	cmp    DWORD PTR [esp+0x48],0x0
+   0x08048da6 &lt;+289&gt;:	je     0x8048daf &lt;main+298&gt;
+   0x08048da8 &lt;+291&gt;:	cmp    DWORD PTR [esp+0x44],0x0
+   0x08048dad &lt;+296&gt;:	jne    0x8048dde &lt;main+345&gt;
+   0x08048daf &lt;+298&gt;:	mov    eax,ds:0x80e453c
+   0x08048db4 &lt;+303&gt;:	mov    DWORD PTR [esp+0xc],eax
+   0x08048db8 &lt;+307&gt;:	mov    DWORD PTR [esp+0x8],0x3e
+   0x08048dc0 &lt;+315&gt;:	mov    DWORD PTR [esp+0x4],0x1
+   0x08048dc8 &lt;+323&gt;:	mov    DWORD PTR [esp],0x80bab6c
+   0x08048dcf &lt;+330&gt;:	call   0x8049900 &lt;fwrite&gt;
+   0x08048dd4 &lt;+335&gt;:	mov    eax,0x1
+   0x08048dd9 &lt;+340&gt;:	jmp    0x8048eed &lt;main+616&gt;
+   0x08048dde &lt;+345&gt;:	mov    DWORD PTR [esp+0x8],0x11
+   0x08048de6 &lt;+353&gt;:	mov    DWORD PTR [esp+0x4],0x2
+   0x08048dee &lt;+361&gt;:	mov    DWORD PTR [esp],0x2
+   0x08048df5 &lt;+368&gt;:	call   0x8057100 &lt;socket&gt;
+   0x08048dfa &lt;+373&gt;:	mov    DWORD PTR [esp+0x38],eax
+   0x08048dfe &lt;+377&gt;:	cmp    DWORD PTR [esp+0x38],0x0
+   0x08048e03 &lt;+382&gt;:	jns    0x8048e34 &lt;main+431&gt;
+   0x08048e05 &lt;+384&gt;:	mov    eax,ds:0x80e453c
+   0x08048e0a &lt;+389&gt;:	mov    DWORD PTR [esp+0xc],eax
+   0x08048e0e &lt;+393&gt;:	mov    DWORD PTR [esp+0x8],0x16
+   0x08048e16 &lt;+401&gt;:	mov    DWORD PTR [esp+0x4],0x1
+   0x08048e1e &lt;+409&gt;:	mov    DWORD PTR [esp],0x80babab
+   0x08048e25 &lt;+416&gt;:	call   0x8049900 &lt;fwrite&gt;
+   0x08048e2a &lt;+421&gt;:	mov    eax,0x1
+   0x08048e2f &lt;+426&gt;:	jmp    0x8048eed &lt;main+616&gt;
+   0x08048e34 &lt;+431&gt;:	mov    eax,DWORD PTR [esp+0x38]
+   0x08048e38 &lt;+435&gt;:	mov    DWORD PTR [esp+0xc],eax
+   0x08048e3c &lt;+439&gt;:	mov    eax,DWORD PTR [esp+0x44]
+   0x08048e40 &lt;+443&gt;:	mov    DWORD PTR [esp+0x8],eax
+   0x08048e44 &lt;+447&gt;:	mov    eax,DWORD PTR [esp+0x48]
+   0x08048e48 &lt;+451&gt;:	mov    DWORD PTR [esp+0x4],eax
+   0x08048e4c &lt;+455&gt;:	mov    eax,DWORD PTR [esp+0x4c]
+   0x08048e50 &lt;+459&gt;:	mov    DWORD PTR [esp],eax
+   0x08048e53 &lt;+462&gt;:	call   0x8048aec &lt;sendAuth&gt;
+   0x08048e58 &lt;+467&gt;:	test   eax,eax
+   0x08048e5a &lt;+469&gt;:	je     0x8048ec3 &lt;main+574&gt;
+   0x08048e5c &lt;+471&gt;:	mov    eax,DWORD PTR [esp+0x38]
+   0x08048e60 &lt;+475&gt;:	mov    DWORD PTR [esp],eax
+   0x08048e63 &lt;+478&gt;:	call   0x8048bde &lt;recvAuth&gt;
+   0x08048e68 &lt;+483&gt;:	test   eax,eax
+   0x08048e6a &lt;+485&gt;:	je     0x8048eb5 &lt;main+560&gt;
+   0x08048e6c &lt;+487&gt;:	mov    DWORD PTR [esp],0x80babc2
+   0x08048e73 &lt;+494&gt;:	call   0x8049a50 &lt;puts&gt;
+   0x08048e78 &lt;+499&gt;:	mov    DWORD PTR [esp+0x40],0x0
+   0x08048e80 &lt;+507&gt;:	jmp    0x8048ea0 &lt;main+539&gt;
+   0x08048e82 &lt;+509&gt;:	lea    edx,[esp+0x13]
+   0x08048e86 &lt;+513&gt;:	mov    eax,DWORD PTR [esp+0x40]
+   0x08048e8a &lt;+517&gt;:	add    eax,edx
+   0x08048e8c &lt;+519&gt;:	mov    al,BYTE PTR [eax]
+   0x08048e8e &lt;+521&gt;:	xor    eax,0x17
+   0x08048e91 &lt;+524&gt;:	movsx  eax,al
+   0x08048e94 &lt;+527&gt;:	mov    DWORD PTR [esp],eax
+   0x08048e97 &lt;+530&gt;:	call   0x8049c80 &lt;putchar&gt;
+   0x08048e9c &lt;+535&gt;:	inc    DWORD PTR [esp+0x40]
+   0x08048ea0 &lt;+539&gt;:	cmp    DWORD PTR [esp+0x40],0x24
+   0x08048ea5 &lt;+544&gt;:	jle    0x8048e82 &lt;main+509&gt;
+   0x08048ea7 &lt;+546&gt;:	mov    DWORD PTR [esp],0xa
+   0x08048eae &lt;+553&gt;:	call   0x8049c80 &lt;putchar&gt;
+   0x08048eb3 &lt;+558&gt;:	jmp    0x8048ee8 &lt;main+611&gt;
+   0x08048eb5 &lt;+560&gt;:	mov    DWORD PTR [esp],0x80babca
+   0x08048ebc &lt;+567&gt;:	call   0x8049a50 &lt;puts&gt;
+   0x08048ec1 &lt;+572&gt;:	jmp    0x8048ee8 &lt;main+611&gt;
+   0x08048ec3 &lt;+574&gt;:	mov    eax,ds:0x80e453c
+   0x08048ec8 &lt;+579&gt;:	mov    DWORD PTR [esp+0xc],eax
+   0x08048ecc &lt;+583&gt;:	mov    DWORD PTR [esp+0x8],0x1e
+   0x08048ed4 &lt;+591&gt;:	mov    DWORD PTR [esp+0x4],0x1
+   0x08048edc &lt;+599&gt;:	mov    DWORD PTR [esp],0x80babe4
+   0x08048ee3 &lt;+606&gt;:	call   0x8049900 &lt;fwrite&gt;
+   0x08048ee8 &lt;+611&gt;:	mov    eax,0x0
+   0x08048eed &lt;+616&gt;:	lea    esp,[ebp-0xc]
+   0x08048ef0 &lt;+619&gt;:	pop    ebx
+   0x08048ef1 &lt;+620&gt;:	pop    esi
+   0x08048ef2 &lt;+621&gt;:	pop    edi
+   0x08048ef3 &lt;+622&gt;:	pop    ebp
+   0x08048ef4 &lt;+623&gt;:	ret    
 End of assembler dump.
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;The disassembly for main is pretty crazy, but if you just walk through it, it&amp;rsquo;s not too bad. It does some argument checking, creates a socket (0x08048df5 &amp;lt;+368&amp;gt;), sends the authentication data (0x08048e53 &amp;lt;+462&amp;gt;), receives the authentication response (0x08048e63 &amp;lt;+478&amp;gt;), and some more nonsense towards the end.&lt;/p&gt;
 
@@ -419,14 +437,15 @@ End of assembler dump.
 
 &lt;p&gt;Before I continued, I had to look up what test actually did. From &lt;a href=&#34;https://stackoverflow.com/questions/13064809/the-point-of-test-eax-eax&#34;&gt;this question on StackOverflow&lt;/a&gt;, &amp;ldquo;TEST sets the Zero Flag if the the result of the AND operation is zero. If two operands are equal, their bitwise AND is zero iff both are zero. It also sets the Sign Flag if the top bit is set in the result, and the Parity Flag if the number of set bits is even.&amp;rdquo; What this means is that in our program, if eax is set to 0x0, then the program will jump to 0x8048eb5 &lt;main+560&gt;, which is towards the end of the program. If we put a breakpoint at this location and look at the registers and disassembly, we can see this happen.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;gdb&amp;gt;break *0x08048e68
-Breakpoint &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; at 0x8048e68
-gdb&amp;gt;run
+&lt;p&gt;
+gdb&gt;break *0x08048e68
+Breakpoint 1 at 0x8048e68
+gdb&gt;run
 Starting program: /home/chiggins/DerbyCon4.0/74/DRIVE_C/TRNDOCS/PGET_A.OUT -s 127.0.0.1 -u username -p password
-Got object file from memory but can&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t &lt;span style=&#34;color: #f8f8f2&#34;&gt;read&lt;/span&gt; symbols: File truncated.
+Got object file from memory but can&#39;t read symbols: File truncated.
 
-Breakpoint 1, 0x08048e68 in main &lt;span style=&#34;color: #f92672&#34;&gt;()&lt;/span&gt;
-gdb&amp;gt;info registers 
+Breakpoint 1, 0x08048e68 in main ()
+gdb&gt;info registers 
 eax            0x0	0x0
 ecx            0xffffd5e8	0xffffd5e8
 edx            0xffffd54a	0xffffd54a
@@ -435,65 +454,65 @@ esp            0xffffd610	0xffffd610
 ebp            0xffffd678	0xffffd678
 esi            0x0	0x0
 edi            0xffffd648	0xffffd648
-eip            0x8048e68	0x8048e68 &amp;lt;main+483&amp;gt;
-eflags         0x287	&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt; CF PF SF IF &lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
+eip            0x8048e68	0x8048e68 &lt;main+483&gt;
+eflags         0x287	[ CF PF SF IF ]
 cs             0x23	0x23
 ss             0x2b	0x2b
 ds             0x2b	0x2b
 es             0x2b	0x2b
 fs             0x0	0x0
 gs             0x63	0x63
-gdb&amp;gt;disassemble main
-Dump of assembler code &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; main:
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;... snip ...&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e53 &amp;lt;+462&amp;gt;:	call   0x8048aec &amp;lt;sendAuth&amp;gt;
-   0x08048e58 &amp;lt;+467&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e5a &amp;lt;+469&amp;gt;:	je     0x8048ec3 &amp;lt;main+574&amp;gt;
-   0x08048e5c &amp;lt;+471&amp;gt;:	mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e60 &amp;lt;+475&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e63 &amp;lt;+478&amp;gt;:	call   0x8048bde &amp;lt;recvAuth&amp;gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&amp;gt; 0x08048e68 &amp;lt;+483&amp;gt;:	&lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e6a &amp;lt;+485&amp;gt;:	je     0x8048eb5 &amp;lt;main+560&amp;gt;
-   0x08048e6c &amp;lt;+487&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babc2
-   0x08048e73 &amp;lt;+494&amp;gt;:	call   0x8049a50 &amp;lt;puts&amp;gt;
-   0x08048e78 &amp;lt;+499&amp;gt;:	mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048e80 &amp;lt;+507&amp;gt;:	jmp    0x8048ea0 &amp;lt;main+539&amp;gt;
-   0x08048e82 &amp;lt;+509&amp;gt;:	lea    edx,&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x13&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;... snip ...&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
+gdb&gt;disassemble main
+Dump of assembler code for function main:
+[... snip ...]
+   0x08048e53 &lt;+462&gt;:	call   0x8048aec &lt;sendAuth&gt;
+   0x08048e58 &lt;+467&gt;:	test   eax,eax
+   0x08048e5a &lt;+469&gt;:	je     0x8048ec3 &lt;main+574&gt;
+   0x08048e5c &lt;+471&gt;:	mov    eax,DWORD PTR [esp+0x38]
+   0x08048e60 &lt;+475&gt;:	mov    DWORD PTR [esp],eax
+   0x08048e63 &lt;+478&gt;:	call   0x8048bde &lt;recvAuth&gt;
+=&gt; 0x08048e68 &lt;+483&gt;:	test   eax,eax
+   0x08048e6a &lt;+485&gt;:	je     0x8048eb5 &lt;main+560&gt;
+   0x08048e6c &lt;+487&gt;:	mov    DWORD PTR [esp],0x80babc2
+   0x08048e73 &lt;+494&gt;:	call   0x8049a50 &lt;puts&gt;
+   0x08048e78 &lt;+499&gt;:	mov    DWORD PTR [esp+0x40],0x0
+   0x08048e80 &lt;+507&gt;:	jmp    0x8048ea0 &lt;main+539&gt;
+   0x08048e82 &lt;+509&gt;:	lea    edx,[esp+0x13]
+[... snip ...]
 End of assembler dump.
-gdb&amp;gt;continue
+gdb&gt;continue
 Continuing.
 bad username or password
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;Inferior &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;process 11299&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; exited normally&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+[Inferior 1 (process 11299) exited normally]
 &lt;/p&gt;
 
 &lt;p&gt;So after recvAuth eax was set to 0x0 which caused the result from test to jump to the end of the program and show the bad password message. What happens if we set eax to 0x1, maybe it will bypass the jump and continue onto something more interesting.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;gdb&amp;gt;run
-Starting program: /home/chiggins/DerbyCon4.0/74/DRIVE_C/TRNDOCS/PGET_A.OUT -s 127.0.0.1 -u username -p password
-Got object file from memory but can&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t &lt;span style=&#34;color: #f8f8f2&#34;&gt;read&lt;/span&gt; symbols: File truncated.
 
-Breakpoint 1, 0x08048e68 in main &lt;span style=&#34;color: #f92672&#34;&gt;()&lt;/span&gt;
-gdb&amp;gt;disassemble main
-Dump of assembler code &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; main:
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;... snip ...&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e53 &amp;lt;+462&amp;gt;:   call   0x8048aec &amp;lt;sendAuth&amp;gt;
-   0x08048e58 &amp;lt;+467&amp;gt;:   &lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e5a &amp;lt;+469&amp;gt;:   je     0x8048ec3 &amp;lt;main+574&amp;gt;
-   0x08048e5c &amp;lt;+471&amp;gt;:   mov    eax,DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x38&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-   0x08048e60 &amp;lt;+475&amp;gt;:   mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,eax
-   0x08048e63 &amp;lt;+478&amp;gt;:   call   0x8048bde &amp;lt;recvAuth&amp;gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&amp;gt; 0x08048e68 &amp;lt;+483&amp;gt;:   &lt;span style=&#34;color: #f8f8f2&#34;&gt;test&lt;/span&gt;   eax,eax
-   0x08048e6a &amp;lt;+485&amp;gt;:   je     0x8048eb5 &amp;lt;main+560&amp;gt;
-   0x08048e6c &amp;lt;+487&amp;gt;:   mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x80babc2
-   0x08048e73 &amp;lt;+494&amp;gt;:   call   0x8049a50 &amp;lt;puts&amp;gt;
-   0x08048e78 &amp;lt;+499&amp;gt;:   mov    DWORD PTR &lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x40&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;,0x0
-   0x08048e80 &amp;lt;+507&amp;gt;:   jmp    0x8048ea0 &amp;lt;main+539&amp;gt;
-   0x08048e82 &amp;lt;+509&amp;gt;:   lea    edx,&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;esp+0x13&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;... snip ...&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
+gdb&gt;run
+Starting program: /home/chiggins/DerbyCon4.0/74/DRIVE_C/TRNDOCS/PGET_A.OUT -s 127.0.0.1 -u username -p password
+Got object file from memory but can&#39;t read symbols: File truncated.
+
+Breakpoint 1, 0x08048e68 in main ()
+gdb&gt;disassemble main
+Dump of assembler code for function main:
+[... snip ...]
+   0x08048e53 &lt;+462&gt;:   call   0x8048aec &lt;sendAuth&gt;
+   0x08048e58 &lt;+467&gt;:   test   eax,eax
+   0x08048e5a &lt;+469&gt;:   je     0x8048ec3 &lt;main+574&gt;
+   0x08048e5c &lt;+471&gt;:   mov    eax,DWORD PTR [esp+0x38]
+   0x08048e60 &lt;+475&gt;:   mov    DWORD PTR [esp],eax
+   0x08048e63 &lt;+478&gt;:   call   0x8048bde &lt;recvAuth&gt;
+=&gt; 0x08048e68 &lt;+483&gt;:   test   eax,eax
+   0x08048e6a &lt;+485&gt;:   je     0x8048eb5 &lt;main+560&gt;
+   0x08048e6c &lt;+487&gt;:   mov    DWORD PTR [esp],0x80babc2
+   0x08048e73 &lt;+494&gt;:   call   0x8049a50 &lt;puts&gt;
+   0x08048e78 &lt;+499&gt;:   mov    DWORD PTR [esp+0x40],0x0
+   0x08048e80 &lt;+507&gt;:   jmp    0x8048ea0 &lt;main+539&gt;
+   0x08048e82 &lt;+509&gt;:   lea    edx,[esp+0x13]
+[... snip ...]
 End of assembler dump.
-gdb&amp;gt;info registers 
+gdb&gt;info registers 
 eax            0x0	0x0
 ecx            0xffffd5e8	0xffffd5e8
 edx            0xffffd54a	0xffffd54a
@@ -502,16 +521,16 @@ esp            0xffffd610	0xffffd610
 ebp            0xffffd678	0xffffd678
 esi            0x0	0x0
 edi            0xffffd648	0xffffd648
-eip            0x8048e68	0x8048e68 &amp;lt;main+483&amp;gt;
-eflags         0x287	&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt; CF PF SF IF &lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
+eip            0x8048e68	0x8048e68 &lt;main+483&gt;
+eflags         0x287	[ CF PF SF IF ]
 cs             0x23	0x23
 ss             0x2b	0x2b
 ds             0x2b	0x2b
 es             0x2b	0x2b
 fs             0x0	0x0
 gs             0x63	0x63
-gdb&amp;gt;set &lt;span style=&#34;color: #f8f8f2&#34;&gt;$eax&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; 0x1
-gdb&amp;gt;info registers
+gdb&gt;set $eax = 0x1
+gdb&gt;info registers
 eax            0x1	0x1
 ecx            0xffffd5e8	0xffffd5e8
 edx            0xffffd54a	0xffffd54a
@@ -520,40 +539,38 @@ esp            0xffffd610	0xffffd610
 ebp            0xffffd678	0xffffd678
 esi            0x0	0x0
 edi            0xffffd648	0xffffd648
-eip            0x8048e68	0x8048e68 &amp;lt;main+483&amp;gt;
-eflags         0x287	&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt; CF PF SF IF &lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
+eip            0x8048e68	0x8048e68 &lt;main+483&gt;
+eflags         0x287	[ CF PF SF IF ]
 cs             0x23	0x23
 ss             0x2b	0x2b
 ds             0x2b	0x2b
 es             0x2b	0x2b
 fs             0x0	0x0
 gs             0x63	0x63
-gdb&amp;gt;continue
+gdb&gt;continue
 Continuing.
 Success
 The secret key is EverybodyDoTheLimit
-&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;Inferior &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;(&lt;/span&gt;process 11416&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; exited normally&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+[Inferior 1 (process 11416) exited normally]
+
 
 &lt;p&gt;Woah! Would you look at that, got something juicy. I tried to submit &amp;ldquo;EverybodyDoTheLimit&amp;rdquo; as a flag, but it ended up not being valid. But if you recall back to the FTP MOTD at the beginning of the post, we can now expect the TRN documents via openssl with the newly acquired secret key. After running through the various encrypted files, I finally ran into one with a flag in it.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;[&lt;/span&gt;chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL&lt;span style=&#34;color: #f92672&#34;&gt;]&lt;/span&gt;$ openssl des3 -d -salt -in 2.TRN -k EverybodyDoTheLimit
+
+[chiggins@vader ~/DerbyCon4.0/74/DRIVE_C/TRNDOCS/ATL]$ openssl des3 -d -salt -in 2.TRN -k EverybodyDoTheLimit
 invoice: 19755
 order: 11389
 customer: 24956
 scrip: flag
 days: 90
 addr1: CountingSheep75
-addr2: &lt;span style=&#34;color: #ae81ff&#34;&gt;8982&lt;/span&gt; Elm
-addr3&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; Henderson LA 13131
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+addr2: 8982 Elm
+addr3; Henderson LA 13131
+
 
 &lt;p&gt;Submitted &amp;ldquo;CountingSheep75&amp;rdquo; to the scoring engine, and received 450 points. Woo!&lt;/p&gt;
 
-&lt;p&gt;Since I&amp;rsquo;ve really been getting into reverse engineering and debugging lately, this was a really fun challenge for me. Thanks to the DerbyCon CTF crew for creating this one!&lt;/p&gt;
-</description>
+&lt;p&gt;Since I&amp;rsquo;ve really been getting into reverse engineering and debugging lately, this was a really fun challenge for me. Thanks to the DerbyCon CTF crew for creating this one!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -562,11 +579,11 @@ addr3&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; Henderson LA 1313
       <pubDate>Mon, 28 Apr 2014 18:56:31 -0500</pubDate>
       
       <guid>http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf----cleaning-product-request/</guid>
-      <description>&lt;p&gt;At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &amp;ldquo;Cleaning Product Request&amp;rdquo; &lt;em&gt;easy&lt;/em&gt; web challenge. Yes, I know, it was an &amp;ldquo;easy&amp;rdquo; challenge. I was just over thinking it and kept beating my head against the wall.&lt;/p&gt;
+      <description>&lt;p&gt;At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &amp;ldquo;Cleaning Product Request&amp;rdquo; &lt;em&gt;easy&lt;/em&gt; web challenge. Yes, I know, it was an &amp;ldquo;easy&amp;rdquo; challenge. I was just over thinking it and kept beating my head against the wall.
+
+&amp;gt; BEGIN TRANSMISSION&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;BEGIN TRANSMISSION&lt;/p&gt;
-
 &lt;p&gt;TARGET: BSides Joint Task Force
 LOCATION: TOP SECRET ()&lt;/p&gt;
 
@@ -597,24 +614,22 @@ you involved.&lt;/p&gt;
 
 &lt;p&gt;If you look up how AJAX requests work, you&amp;rsquo;ll see that the X_REQUESTED_WITH header is set to XMLHTTPRequest. In Burp I send the request to repeater, added in the X_REQUESTED_WITH header, set it to XMLHTTPRequest, sent out the request, and boom, flag acquired. Ben0xA, you&amp;rsquo;re going to give me gray hair with simple silly challenges like this!&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/2.png&#34; /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;p&gt;
+
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/3.png&#34; /&gt;
     
     
-&lt;/figure&gt;
-&lt;/p&gt;
-</description>
+&lt;/figure&gt;</description>
     </item>
     
     <item>
@@ -623,9 +638,9 @@ you involved.&lt;/p&gt;
       <pubDate>Sat, 29 Mar 2014 17:11:42 -0500</pubDate>
       
       <guid>http://chigstuff.com/blog/2014/03/29/my-first-shellcode/</guid>
-      <description>&lt;p&gt;Lately I&amp;rsquo;ve been wanting to explore some of what I call the &amp;ldquo;black magic&amp;rdquo; of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I&amp;rsquo;m looking at because I just don&amp;rsquo;t understand it. On Twitter I&amp;rsquo;ve been seeing &lt;a href=&#34;http://twitter.com/SecurityTube&#34;&gt;@SecurityTube&lt;/a&gt; advertise their &lt;a href=&#34;http://www.pentesteracademy.com/course?id=7&#34;&gt;x86_64 Assembly and Shellcoding on Linux&lt;/a&gt; video course, so I decided to drop some money and learn what I can from it. I&amp;rsquo;ve yet to fully finish it, but more on that later.&lt;/p&gt;
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been wanting to explore some of what I call the &amp;ldquo;black magic&amp;rdquo; of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I&amp;rsquo;m looking at because I just don&amp;rsquo;t understand it. On Twitter I&amp;rsquo;ve been seeing &lt;a href=&#34;http://twitter.com/SecurityTube&#34;&gt;@SecurityTube&lt;/a&gt; advertise their &lt;a href=&#34;http://www.pentesteracademy.com/course?id=7&#34;&gt;x86_64 Assembly and Shellcoding on Linux&lt;/a&gt; video course, so I decided to drop some money and learn what I can from it. I&amp;rsquo;ve yet to fully finish it, but more on that later.
 
-&lt;p&gt;If I want to learn something, I usually have to do that something, get the hands on experience. I&amp;rsquo;m only about a third of the way through the course, only just going through assembly basics. But I decided to take a small break and try to write some shellcode of my own. I went exploring through the &lt;a href=&#34;http://shell-storm.org/shellcode/&#34;&gt;Shellcode Database&lt;/a&gt; and found a bit of x86 shellcode that I wanted to translate over to work on an x86_64 system. After some searching, I found one that &lt;a href=&#34;http://www.shell-storm.org/shellcode/files/shellcode-864.php&#34;&gt;copies /etc/passwd to /tmp/outfile&lt;/a&gt; written by &lt;a href=&#34;https://github.com/polslinux&#34;&gt;Paolo Stivanin&lt;/a&gt;. Because of how trivial and simple looking the shellcode was, I decided to translate it over to work on x86_64.&lt;/p&gt;
+If I want to learn something, I usually have to do that something, get the hands on experience. I&amp;rsquo;m only about a third of the way through the course, only just going through assembly basics. But I decided to take a small break and try to write some shellcode of my own. I went exploring through the &lt;a href=&#34;http://shell-storm.org/shellcode/&#34;&gt;Shellcode Database&lt;/a&gt; and found a bit of x86 shellcode that I wanted to translate over to work on an x86_64 system. After some searching, I found one that &lt;a href=&#34;http://www.shell-storm.org/shellcode/files/shellcode-864.php&#34;&gt;copies /etc/passwd to /tmp/outfile&lt;/a&gt; written by &lt;a href=&#34;https://github.com/polslinux&#34;&gt;Paolo Stivanin&lt;/a&gt;. Because of how trivial and simple looking the shellcode was, I decided to translate it over to work on x86_64.&lt;/p&gt;
 
 &lt;p&gt;After a few days of constant Googling and debugging and spending more time in gdb I&amp;rsquo;d care to admit, I finally got a working bit of shellcode that works on x86_64 Linux that copies the contents of /etc/passwd to /tmp/outfile. It is sitting at 118 bytes and contains no null bytes, so you&amp;rsquo;ll be able to inject it when necessary. I know it is nothing super fancy but it works and hopefully it can be found useful to someone.&lt;/p&gt;
 
@@ -643,8 +658,7 @@ you involved.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/X86-64&#34;&gt;https://en.wikipedia.org/wiki/X86-64&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&#34;&gt;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&#34;&gt;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -677,6 +691,8 @@ you involved.&lt;/p&gt;
     
 &lt;/figure&gt;
 
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Here is the challenge description:&lt;/p&gt;
 
@@ -730,17 +746,16 @@ you involved.&lt;/p&gt;
 &lt;/figure&gt;
 
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2013_31/6.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;p&gt;Oh hello there key. End up doing some copy/pasta into the CTF framework, submit it, and receive points! I rarely do any reverse engineering, so this was a very cool learning experience for me and I thought that it would be cool to share with others.&lt;/p&gt;
-</description>
+
+&lt;p&gt;Oh hello there key. End up doing some copy/pasta into the CTF framework, submit it, and receive points! I rarely do any reverse engineering, so this was a very cool learning experience for me and I thought that it would be cool to share with others.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -778,11 +793,10 @@ you involved.&lt;/p&gt;
       <pubDate>Tue, 21 Aug 2012 16:15:01 -0500</pubDate>
       
       <guid>http://chigstuff.com/blog/2012/08/21/google-cloud-messaging-through-php/</guid>
-      <description>&lt;p&gt;A few weeks ago I ran into an article on how to use Google Cloud Messaging with the .NET Framework. That got me thinking, and I wanted to give it a shot in PHP, it couldn’t be too bad right? So, here’s just some simple code on crafting the POST request to send to a specified Android device. All you need to do is supply your own various IDs from Google and whatever Android device you want to send to (as long as it’s registered) and you’re all set. Take a look at my code:&lt;/p&gt;
+      <description>&lt;p&gt;A few weeks ago I ran into an article on how to use Google Cloud Messaging with the .NET Framework. That got me thinking, and I wanted to give it a shot in PHP, it couldn’t be too bad right? So, here’s just some simple code on crafting the POST request to send to a specified Android device. All you need to do is supply your own various IDs from Google and whatever Android device you want to send to (as long as it’s registered) and you’re all set. Take a look at my code:
 
 &lt;script type=&#34;text/javascript&#34; src=&#34;http://gist.github.com/9923471.js&#34;&gt;&lt;/script&gt;
-
-</description>
+&lt;/p&gt;</description>
     </item>
     
   </channel>

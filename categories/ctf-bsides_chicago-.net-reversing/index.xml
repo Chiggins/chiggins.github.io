@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ctf Bsides_chicago .Net Reversing on Chiggins&#39; Thoughts</title>
-    <link>http://chigstuff.com/categories/ctf-bsides_chicago-/index.net-reversing/</link>
-    <description>Recent content in Ctf Bsides_chicago .Net Reversing on Chiggins&#39; Thoughts</description>
+    <title>Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/ctf-bsides_chicago-.net-reversing/index.xml</link>
+    <description>Recent content on Chiggins&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Apr 2013 13:45:44 -0500</lastBuildDate>
     <atom:link href="http://chigstuff.com/categories/ctf-bsides_chicago-.net-reversing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -25,6 +24,8 @@
     
 &lt;/figure&gt;
 
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Here is the challenge description:&lt;/p&gt;
 
@@ -78,17 +79,16 @@
 &lt;/figure&gt;
 
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2013_31/6.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;p&gt;Oh hello there key. End up doing some copy/pasta into the CTF framework, submit it, and receive points! I rarely do any reverse engineering, so this was a very cool learning experience for me and I thought that it would be cool to share with others.&lt;/p&gt;
-</description>
+
+&lt;p&gt;Oh hello there key. End up doing some copy/pasta into the CTF framework, submit it, and receive points! I rarely do any reverse engineering, so this was a very cool learning experience for me and I thought that it would be cool to share with others.&lt;/p&gt;</description>
     </item>
     
   </channel>

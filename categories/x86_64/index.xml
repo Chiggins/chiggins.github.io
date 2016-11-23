@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>X86_64 on Chiggins&#39; Thoughts</title>
-    <link>http://chigstuff.com/categories/x86_64/</link>
-    <description>Recent content in X86_64 on Chiggins&#39; Thoughts</description>
+    <title>Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/x86_64/index.xml</link>
+    <description>Recent content on Chiggins&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Mar 2014 17:11:42 -0500</lastBuildDate>
     <atom:link href="http://chigstuff.com/categories/x86_64/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +14,9 @@
       <pubDate>Sat, 29 Mar 2014 17:11:42 -0500</pubDate>
       
       <guid>http://chigstuff.com/blog/2014/03/29/my-first-shellcode/</guid>
-      <description>&lt;p&gt;Lately I&amp;rsquo;ve been wanting to explore some of what I call the &amp;ldquo;black magic&amp;rdquo; of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I&amp;rsquo;m looking at because I just don&amp;rsquo;t understand it. On Twitter I&amp;rsquo;ve been seeing &lt;a href=&#34;http://twitter.com/SecurityTube&#34;&gt;@SecurityTube&lt;/a&gt; advertise their &lt;a href=&#34;http://www.pentesteracademy.com/course?id=7&#34;&gt;x86_64 Assembly and Shellcoding on Linux&lt;/a&gt; video course, so I decided to drop some money and learn what I can from it. I&amp;rsquo;ve yet to fully finish it, but more on that later.&lt;/p&gt;
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been wanting to explore some of what I call the &amp;ldquo;black magic&amp;rdquo; of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I&amp;rsquo;m looking at because I just don&amp;rsquo;t understand it. On Twitter I&amp;rsquo;ve been seeing &lt;a href=&#34;http://twitter.com/SecurityTube&#34;&gt;@SecurityTube&lt;/a&gt; advertise their &lt;a href=&#34;http://www.pentesteracademy.com/course?id=7&#34;&gt;x86_64 Assembly and Shellcoding on Linux&lt;/a&gt; video course, so I decided to drop some money and learn what I can from it. I&amp;rsquo;ve yet to fully finish it, but more on that later.
 
-&lt;p&gt;If I want to learn something, I usually have to do that something, get the hands on experience. I&amp;rsquo;m only about a third of the way through the course, only just going through assembly basics. But I decided to take a small break and try to write some shellcode of my own. I went exploring through the &lt;a href=&#34;http://shell-storm.org/shellcode/&#34;&gt;Shellcode Database&lt;/a&gt; and found a bit of x86 shellcode that I wanted to translate over to work on an x86_64 system. After some searching, I found one that &lt;a href=&#34;http://www.shell-storm.org/shellcode/files/shellcode-864.php&#34;&gt;copies /etc/passwd to /tmp/outfile&lt;/a&gt; written by &lt;a href=&#34;https://github.com/polslinux&#34;&gt;Paolo Stivanin&lt;/a&gt;. Because of how trivial and simple looking the shellcode was, I decided to translate it over to work on x86_64.&lt;/p&gt;
+If I want to learn something, I usually have to do that something, get the hands on experience. I&amp;rsquo;m only about a third of the way through the course, only just going through assembly basics. But I decided to take a small break and try to write some shellcode of my own. I went exploring through the &lt;a href=&#34;http://shell-storm.org/shellcode/&#34;&gt;Shellcode Database&lt;/a&gt; and found a bit of x86 shellcode that I wanted to translate over to work on an x86_64 system. After some searching, I found one that &lt;a href=&#34;http://www.shell-storm.org/shellcode/files/shellcode-864.php&#34;&gt;copies /etc/passwd to /tmp/outfile&lt;/a&gt; written by &lt;a href=&#34;https://github.com/polslinux&#34;&gt;Paolo Stivanin&lt;/a&gt;. Because of how trivial and simple looking the shellcode was, I decided to translate it over to work on x86_64.&lt;/p&gt;
 
 &lt;p&gt;After a few days of constant Googling and debugging and spending more time in gdb I&amp;rsquo;d care to admit, I finally got a working bit of shellcode that works on x86_64 Linux that copies the contents of /etc/passwd to /tmp/outfile. It is sitting at 118 bytes and contains no null bytes, so you&amp;rsquo;ll be able to inject it when necessary. I know it is nothing super fancy but it works and hopefully it can be found useful to someone.&lt;/p&gt;
 
@@ -35,8 +34,7 @@
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/X86-64&#34;&gt;https://en.wikipedia.org/wiki/X86-64&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&#34;&gt;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&#34;&gt;http://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

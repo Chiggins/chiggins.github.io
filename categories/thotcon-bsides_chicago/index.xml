@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thotcon Bsides_chicago on Chiggins&#39; Thoughts</title>
-    <link>http://chigstuff.com/categories/thotcon-bsides_chicago/</link>
-    <description>Recent content in Thotcon Bsides_chicago on Chiggins&#39; Thoughts</description>
+    <title>Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/thotcon-bsides_chicago/index.xml</link>
+    <description>Recent content on Chiggins&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2013 14:20:34 -0500</lastBuildDate>
     <atom:link href="http://chigstuff.com/categories/thotcon-bsides_chicago/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

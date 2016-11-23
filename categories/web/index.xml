@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on Chiggins&#39; Thoughts</title>
-    <link>http://chigstuff.com/categories/web/</link>
-    <description>Recent content in Web on Chiggins&#39; Thoughts</description>
+    <title>Chiggins&#39; Thoughts</title>
+    <link>http://chigstuff.com/categories/web/index.xml</link>
+    <description>Recent content on Chiggins&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Apr 2014 18:56:31 -0500</lastBuildDate>
     <atom:link href="http://chigstuff.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +14,11 @@
       <pubDate>Mon, 28 Apr 2014 18:56:31 -0500</pubDate>
       
       <guid>http://chigstuff.com/blog/2014/04/28/bsides-chicago-2014-ctf----cleaning-product-request/</guid>
-      <description>&lt;p&gt;At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &amp;ldquo;Cleaning Product Request&amp;rdquo; &lt;em&gt;easy&lt;/em&gt; web challenge. Yes, I know, it was an &amp;ldquo;easy&amp;rdquo; challenge. I was just over thinking it and kept beating my head against the wall.&lt;/p&gt;
+      <description>&lt;p&gt;At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the &amp;ldquo;Cleaning Product Request&amp;rdquo; &lt;em&gt;easy&lt;/em&gt; web challenge. Yes, I know, it was an &amp;ldquo;easy&amp;rdquo; challenge. I was just over thinking it and kept beating my head against the wall.
+
+&amp;gt; BEGIN TRANSMISSION&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;BEGIN TRANSMISSION&lt;/p&gt;
-
 &lt;p&gt;TARGET: BSides Joint Task Force
 LOCATION: TOP SECRET ()&lt;/p&gt;
 
@@ -50,24 +49,22 @@ you involved.&lt;/p&gt;
 
 &lt;p&gt;If you look up how AJAX requests work, you&amp;rsquo;ll see that the X_REQUESTED_WITH header is set to XMLHTTPRequest. In Burp I send the request to repeater, added in the X_REQUESTED_WITH header, set it to XMLHTTPRequest, sent out the request, and boom, flag acquired. Ben0xA, you&amp;rsquo;re going to give me gray hair with simple silly challenges like this!&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/2.png&#34; /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;p&gt;
+
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://chigstuff.com/images/bsides_2014_cleaning/3.png&#34; /&gt;
     
     
-&lt;/figure&gt;
-&lt;/p&gt;
-</description>
+&lt;/figure&gt;</description>
     </item>
     
   </channel>
