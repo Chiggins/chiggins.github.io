@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Chris Higgins">
+    <meta name="description" content="Description Here">
+    <meta name="keywords" content="security,beer,brewer,metasploit,infosec">
+
+    <base href="http://chigstuff.com/">
+    <title>
+  Bsides Chicago 2014 CTF - Cleaning Product Request · Chiggins Stuff
+</title>
+
+    <link rel="canonical" href="http://chigstuff.com/blog/bsides-chicago-2014-ctf----cleaning-product-request/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="http://chigstuff.com/css/style.min.css">
+
+    <link rel="icon" type="image/png" href="http://chigstuff.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://chigstuff.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.37.1" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://chigstuff.com/">
+      Chiggins Stuff
+    </a>
+    
+    <ul class="navigation-list float-right">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/blog/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/contributions/">Contributions</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/files/resume.pdf">Resume</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Bsides Chicago 2014 CTF - Cleaning Product Request</h1>
+    </header>
+
+    <p>At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the “Cleaning Product Request” easy web challenge. Yes, I know, it was an “easy” challenge. I was just over thinking it and kept beating my head against the wall.</p>
+
+<blockquote>
+<p>BEGIN TRANSMISSION</p>
+
+<p>TARGET: BSides Joint Task Force LOCATION: TOP SECRET ()</p>
+
+<p>DETAILS:</p>
+
+<p>During our analysis of local agents systems we found a rogue file on our systems. We are not sure what it does but we are sure an agent has something to do with it. We tried to refer this to to our guys down in the lab but they said it should have been referred to someone else. That’s why we are getting you involved.</p>
+
+<p><a href="https://bsjtf.com/f291lsf.php?flag=gimmie">https://bsjtf.com/f291lsf.php?flag=gimmie</a></p>
+
+<p>Hint: AJAX</p>
+
+<p>Good luck agent!</p>
+
+<p>END TRANSMISSION</p>
+</blockquote>
+
+<p>So when you first visit the website the website, all you get is a message saying “Access Denied.” I started up Burp and captured the request to see if anything interesting stuck out, but no luck. I also tried to mess around with the referer header since that was the key to a challenge at last years CTF, but again no luck. The @bsjtf was tweeting out hints related to this challenge such as “What’s a utility that is also a cleaning product?”, “There are all sorts of things that can be “spoofed”. Especially when looking for “cleaning product” requests. #tricityctf”, and what finally gave me the final push, “How do you check to see if an request was sent via AJAX?”.</p>
+
+<p><img src="/images/bsides_2014_cleaning/1.png" alt="Screenshot 1" /></p>
+
+<p>If you look up how AJAX requests work, you’ll see that the <code>X_REQUESTED_WITH</code> header is set to <code>XMLHTTPRequest</code>. In Burp I send the request to repeater, added in the <code>X_REQUESTED_WITH</code> header, set it to <code>XMLHTTPRequest</code>`, sent out the request, and boom, flag acquired. Ben0xA, you’re going to give me gray hair with simple silly challenges like this!</p>
+
+<p><img src="/images/bsides_2014_cleaning/2.png" alt="Screenshot 2" /></p>
+
+<p><img src="/images/bsides_2014_cleaning/3.png" alt="Screenshot 3" /></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    © 2016 · Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

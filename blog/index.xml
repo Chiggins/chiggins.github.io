@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chiggins Stuff</title>
-    <link>http://chigstuff.com/</link>
-    <description>Recent content on Chiggins Stuff</description>
+    <title>Blogs on Chiggins Stuff</title>
+    <link>http://chigstuff.com/blog/</link>
+    <description>Recent content in Blogs on Chiggins Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Nov 2016 20:55:37 -0500</lastBuildDate>
     
-	<atom:link href="http://chigstuff.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://chigstuff.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -89,26 +89,6 @@ TARGET: BSides Joint Task Force LOCATION: TOP SECRET ()</description>
 
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://chigstuff.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://chigstuff.com/about/</guid>
-      <description>Hello! I&amp;rsquo;m Chris Higgins, M.S., OSCP, and this is my website where I&amp;rsquo;ll attempt to post useful bits of what I&amp;rsquo;m working on or involved in.
-I am currently an Associate Consultant at Mandiant, a FireEye company. I am also a committer to the open-source Metasploit project. Currently I’m interested in penetration testing, exploit development, reverse engineering, malware analysis, and automated infrastructure. I also have a strong hobby for home brewing my own beer, so I&amp;rsquo;m always up for a good beer discussion!</description>
-    </item>
-    
-    <item>
-      <title>Contributions</title>
-      <link>http://chigstuff.com/contributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://chigstuff.com/contributions/</guid>
-      <description> Here’s a list of contributions that I’ve made to various websites or projects.
-Metasploit Modules  Dup Scout Enterprise Login Buffer Overflow SysGauge SMTP Validation Buffer Overflow PCMAN FTP Server Buffer Overflow - PUT Command Disk Pulse Enterprise Login Buffer Overflow WinaXe 7.7 FTP Client Remote Buffer Overflow  Random Programming  Reads data from /etc/passwd to /tmp/outfile shellcode for x86-64 Linux  </description>
     </item>
     
   </channel>
