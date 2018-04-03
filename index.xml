@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chiggins Stuff</title>
-    <link>http://chigstuff.com/</link>
+    <link>https://chigstuff.com/</link>
     <description>Recent content on Chiggins Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Nov 2016 20:55:37 -0500</lastBuildDate>
     
-	<atom:link href="http://chigstuff.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chigstuff.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Two New Metasploit Modules</title>
-      <link>http://chigstuff.com/blog/two-new-metasploit-modules/</link>
+      <link>https://chigstuff.com/blog/two-new-metasploit-modules/</link>
       <pubDate>Wed, 23 Nov 2016 20:55:37 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/two-new-metasploit-modules/</guid>
+      <guid>https://chigstuff.com/blog/two-new-metasploit-modules/</guid>
       <description>This isn’t really anything super big but still something I’m proud of. I’ve recently gotten two Metasploit exploit modules merged into master, which is pretty cool! You can see what I’ve contributed to Metasploit so far on my contributions page.
 Even though what I’ve really been doing is just porting PoC exploits from Exploit-DB, it’s provided a great learning experience with how the Metasploit Framework actually works. For one of the modules I had to dive deep into the frameworks core and try to figure out how SEH and it’s egghunter work, which was huge to me as I really had just learned how egghunting really worked.</description>
     </item>
     
     <item>
       <title>2016 Update</title>
-      <link>http://chigstuff.com/blog/2016-update/</link>
+      <link>https://chigstuff.com/blog/2016-update/</link>
       <pubDate>Mon, 23 May 2016 23:02:09 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/2016-update/</guid>
+      <guid>https://chigstuff.com/blog/2016-update/</guid>
       <description>I really should get better about posting more than once a year, but everyone says that. Maybe now that I’m done taking classes, I’ll be able to focus on more stuff I want to do and post some of my more interesting findings here.
 Master of Science So my biggest and most recent update is that I’ve finally acquired my Master of Science degree from Illinois State University with a focus on Network and Security Management.</description>
     </item>
     
     <item>
       <title>Hey I Did the Oscp</title>
-      <link>http://chigstuff.com/blog/hey-i-did-the-oscp/</link>
+      <link>https://chigstuff.com/blog/hey-i-did-the-oscp/</link>
       <pubDate>Sun, 12 Apr 2015 02:35:20 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/hey-i-did-the-oscp/</guid>
+      <guid>https://chigstuff.com/blog/hey-i-did-the-oscp/</guid>
       <description>So over the past handful of months I’ve been taking some time and worked on the Penetration Testing with Kali Linux training, which in turn I took the Offensive Security Certified Professional exam! It took a while for me to be able to work through all the training, but as of April 27th, 2015, I am OSCP certified!
 The Training Towards the end of last summer I was able to start the training course, and had two months of lab time.</description>
     </item>
     
     <item>
       <title>Derbycon 4.0 Ctf   Trndocs Elf Binary Reverse Engineering and Debugging</title>
-      <link>http://chigstuff.com/blog/derbycon-4.0-ctf---trndocs-elf-binary-reverse-engineering-and-debugging/</link>
+      <link>https://chigstuff.com/blog/derbycon-4.0-ctf---trndocs-elf-binary-reverse-engineering-and-debugging/</link>
       <pubDate>Tue, 30 Sep 2014 17:40:44 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/derbycon-4.0-ctf---trndocs-elf-binary-reverse-engineering-and-debugging/</guid>
+      <guid>https://chigstuff.com/blog/derbycon-4.0-ctf---trndocs-elf-binary-reverse-engineering-and-debugging/</guid>
       <description>So this past weekend I attended DerbyCon 4.0 in Louisville, Kentucky, and was lucky enough to play the CTF along side the @bsjtf team. We were able to place 16th out of the 77 point scoring teams/individuals, which is pretty damn good I’d say. This write-up will be for a reversing challenge I solved, adding 450 points to the teams total.
 One of the first things done was a scan for various services on the network.</description>
     </item>
     
     <item>
       <title>Bsides Chicago 2014 CTF - Cleaning Product Request</title>
-      <link>http://chigstuff.com/blog/bsides-chicago-2014-ctf----cleaning-product-request/</link>
+      <link>https://chigstuff.com/blog/bsides-chicago-2014-ctf----cleaning-product-request/</link>
       <pubDate>Mon, 28 Apr 2014 17:49:48 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/bsides-chicago-2014-ctf----cleaning-product-request/</guid>
+      <guid>https://chigstuff.com/blog/bsides-chicago-2014-ctf----cleaning-product-request/</guid>
       <description>At BSides Chicago 2014 this weekend I participated in the Tricity BSJTF CTF with team Penguins. One of the challenges that caused me the most rage and an epic face-palm once I figured it out was the “Cleaning Product Request” easy web challenge. Yes, I know, it was an “easy” challenge. I was just over thinking it and kept beating my head against the wall.
  BEGIN TRANSMISSION
 TARGET: BSides Joint Task Force LOCATION: TOP SECRET ()</description>
@@ -64,25 +64,25 @@ TARGET: BSides Joint Task Force LOCATION: TOP SECRET ()</description>
     
     <item>
       <title>My First Shellcode</title>
-      <link>http://chigstuff.com/blog/my-first-shellcode/</link>
+      <link>https://chigstuff.com/blog/my-first-shellcode/</link>
       <pubDate>Sat, 29 Mar 2014 18:03:12 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/my-first-shellcode/</guid>
+      <guid>https://chigstuff.com/blog/my-first-shellcode/</guid>
       <description>Lately I’ve been wanting to explore some of what I call the “black magic” of infosec, reverse engineering and shellcoding. Whenever I see some posting or article that comes out on this I always become curious and bewildered at what I’m looking at because I just don’t understand it. On Twitter I’ve been seeing @SecurityTube advertise their x86_64 Assembly and Shellcoding on Linux video course, so I decided to drop some money and learn what I can from it.</description>
     </item>
     
     <item>
       <title>BSides Chicago 2013 CTF Challenge 31 Write Up</title>
-      <link>http://chigstuff.com/blog/bsides-chicago-2013-ctf-challenge-number-31-write-up/</link>
+      <link>https://chigstuff.com/blog/bsides-chicago-2013-ctf-challenge-number-31-write-up/</link>
       <pubDate>Tue, 30 Apr 2013 13:45:44 -0500</pubDate>
       
-      <guid>http://chigstuff.com/blog/bsides-chicago-2013-ctf-challenge-number-31-write-up/</guid>
+      <guid>https://chigstuff.com/blog/bsides-chicago-2013-ctf-challenge-number-31-write-up/</guid>
       <description>&lt;p&gt;The BSides Chicago 2013 CTF was a fun one and quite the learning experience, so here’s my first ever write up and it’s going to be on challenge #31, easy reverse engineering on a .NET console application.&lt;/p&gt;
 
 
 &lt;figure&gt;
     
-        &lt;img src=&#34;http://chigstuff.com/images/bsides_2013_31/1.jpg&#34; /&gt;
+        &lt;img src=&#34;https://chigstuff.com/images/bsides_2013_31/1.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -93,20 +93,20 @@ TARGET: BSides Joint Task Force LOCATION: TOP SECRET ()</description>
     
     <item>
       <title>About</title>
-      <link>http://chigstuff.com/about/</link>
+      <link>https://chigstuff.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chigstuff.com/about/</guid>
+      <guid>https://chigstuff.com/about/</guid>
       <description>Hello! I&amp;rsquo;m Chris Higgins, M.S., OSCP, and this is my website where I&amp;rsquo;ll attempt to post useful bits of what I&amp;rsquo;m working on or involved in.
 I am currently an Associate Consultant at Mandiant, a FireEye company. I am also a committer to the open-source Metasploit project. Currently I’m interested in penetration testing, exploit development, reverse engineering, malware analysis, and automated infrastructure. I also have a strong hobby for home brewing my own beer, so I&amp;rsquo;m always up for a good beer discussion!</description>
     </item>
     
     <item>
       <title>Contributions</title>
-      <link>http://chigstuff.com/contributions/</link>
+      <link>https://chigstuff.com/contributions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chigstuff.com/contributions/</guid>
+      <guid>https://chigstuff.com/contributions/</guid>
       <description> Here’s a list of contributions that I’ve made to various websites or projects.
 Metasploit Modules  Dup Scout Enterprise Login Buffer Overflow SysGauge SMTP Validation Buffer Overflow PCMAN FTP Server Buffer Overflow - PUT Command Disk Pulse Enterprise Login Buffer Overflow WinaXe 7.7 FTP Client Remote Buffer Overflow  Random Programming  Reads data from /etc/passwd to /tmp/outfile shellcode for x86-64 Linux  </description>
     </item>
