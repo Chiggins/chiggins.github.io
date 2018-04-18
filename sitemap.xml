@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/</loc>
+    <lastmod>2018-04-17T00:24:27-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chigstuff.com/blog/two-new-metasploit-modules/</loc>
     <lastmod>2016-11-23T20:55:37-05:00</lastmod>
   </url>
@@ -43,7 +48,7 @@
   
   <url>
     <loc>https://chigstuff.com/blog/</loc>
-    <lastmod>2016-11-23T20:55:37-05:00</lastmod>
+    <lastmod>2018-04-17T00:24:27-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +59,7 @@
   
   <url>
     <loc>https://chigstuff.com/</loc>
-    <lastmod>2016-11-23T20:55:37-05:00</lastmod>
+    <lastmod>2018-04-17T00:24:27-05:00</lastmod>
     <priority>0</priority>
   </url>
   

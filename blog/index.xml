@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Chiggins Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Nov 2016 20:55:37 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 00:24:27 -0500</lastBuildDate>
     
 	<atom:link href="https://chigstuff.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Metasploit Domain Fronting With Microsoft Azure</title>
+      <link>https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/</link>
+      <pubDate>Tue, 17 Apr 2018 00:24:27 -0500</pubDate>
+      
+      <guid>https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/</guid>
+      <description>Domain fronting has been one of the biggest &amp;ldquo;new-hotnesses&amp;rdquo; of the past few years and rightly so. It helps to mask your C2 traffic behind well-known domains and does a fairly good job at keeping defenders in the dark. We&amp;rsquo;ve seen plenty of resources setting up domain fronting for Empire and Cobalt Strike, which have definitely helped to pave the way. Domain fronting support was finally added into the Metasploit Framework in late 2017 and now we&amp;rsquo;re starting to see various resources to help set that up for you.</description>
+    </item>
     
     <item>
       <title>Two New Metasploit Modules</title>
